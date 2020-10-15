@@ -1,0 +1,54 @@
+.relatedArt_sec{
+    .relatedArt_wrap{
+        .relatedArt_img{
+            display: block;
+            img{
+                display: block;
+                width: 100%;
+            }
+        }
+        span{
+            font-size: 12px;
+            line-height: 16px;
+            color: $red;
+        }
+        .relatedArt_posts{
+            display: flex;
+            justify-content: space-between;
+            padding: 20px 0 30px;
+            .relatedArt_item{
+                flex-basis: 32%;
+                .relatedArt_img{
+                    overflow: hidden;
+                    img{
+                        transition-duration: 1000ms;
+                        overflow: hidden;
+                    }
+                }
+                .relatedArt_desc{
+                    padding: 15px 0;
+                }
+                &:hover{
+                    .relatedArt_img{
+                        img{
+                            transform: scale(1.1);
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+@media(max-width:768px){
+    .relatedArt_sec{
+        .relatedArt_wrap{    
+            .relatedArt_posts{
+                flex-direction: column;
+                .relatedArt_item{
+                    margin-bottom: 30px;
+                    
+                }
+            }
+        }
+    }
+}

@@ -1,0 +1,1349 @@
+.job_sec{
+    min-height: calc(100vh - 218px);
+    width: 100%;
+
+    .job_wrap{
+        border-top: 1px solid $videoDesc;
+        padding-top: 40px;
+
+        .job_block{
+            display: flex;
+            justify-content: space-between;
+
+            .job_desc{
+                flex-basis: 60%;
+
+                .job_descText{
+                    padding: 24px 0 24px;
+
+                    p{
+                        padding-bottom: 8px;
+                    }
+
+                }
+                .job_descReq{
+
+                    .job_descReqArrow{
+                        padding: 8px 0 4px 30px;
+                        p{
+                            padding: 4px 0;
+                        }
+
+
+                        span{
+                            color: $green;
+                            margin-left: -30px;
+                            padding-right: 8px;
+                        }
+
+                    }
+                    p{
+                        padding: 4px 0;
+                    }
+                    
+
+
+                }
+                .job_descLogo{
+                    margin-top: 28px;
+                    ul{
+                        display: flex;
+                        justify-content: start;
+                        li{
+                            width: 98px;
+                            height: 79px;
+                            border: 1px solid $videoDesc;
+                            position: relative;
+                            img{
+                                position: absolute;
+                                left: 50%;
+                                top: 50%;
+                                transform: translate(-50%, -50%);
+                                display: block;
+                                width: 90%;
+                            };
+                        }
+                    }
+                }
+
+            }
+
+            .job_form{
+                flex-basis: 40%;
+                margin-left: 40px;
+                margin-bottom: 110px;
+
+                form{
+                    width: 437px;
+                    height: 100%;
+                    background-color: $white;
+                    margin-top: 0;
+                    margin-bottom: 50px;
+                    max-width: 100%;
+
+                    h4{
+                        padding: 21px 0 0 24px;
+                    }
+                    .form_title{
+                        font-size: 24px;
+                        line-height: 24px;
+                        font-weight: bold;
+                    }
+
+                    label{
+                        font-family: 'Inter', sans-serif;
+                        font-size: 16px;
+                        line-height: 24px;
+                        font-weight: bold;
+                        color: $darkText;
+                    }
+                    input{
+                        width: 100%;
+                        height: 48px;
+                        padding-left: 10px;
+                        background-color: $inputBg;
+                        border: 0.5px solid $videoDesc;
+                        border-radius: 4px;
+                        box-sizing: border-box;
+                        
+                    }
+                    textarea{
+                        width: 100%;
+                        height: 120px;
+                        padding-left: 10px;
+                        background-color: $inputBg;
+                        border: 0.5px solid $videoDesc;
+                        border-radius: 4px;
+                        padding: 12px 0 0 16px;
+                        box-sizing: border-box;
+                        
+                    }
+                    input,
+                    textarea{
+
+                        &::placeholder{
+                            font-family: 'Inter', sans-serif;
+                            font-size: 16px;
+                            line-height: 24px;
+                            font-weight: 500;
+                            color: $placeholder;
+                        }
+
+                    }
+
+                    .job_formName,
+                    .job_formPhone,
+                    .job_formEmail,
+                    .job_formResume,
+                    .job_formText,
+                    .job_formDesc,
+                    .job_formBtn,
+                    .job_formInitial,
+                    .job_formCommet{
+                        margin-top: 14px;
+                        // margin-bottom: 0;
+                        padding: 0 24px;
+
+                    }
+                    
+                    .job_formName{
+                        display: flex;
+                        justify-content: space-between;
+                        
+                        .job_formItem{
+                            flex-basis: 49%;
+                        }
+                    }
+
+                    .job_formPhone{
+                        display: flex;
+                        justify-content: space-between;
+                        
+
+                        .job_phone{
+                            flex-basis: 70%;
+                        }
+                        .job_code{
+                            flex-basis: 28%;
+                        }
+                    }
+
+                    .job_formResume{
+                        display: flex;
+                        flex-direction: column;
+
+                        input[type="file"] {
+                            display: none;
+                        }
+                        .fileInput{
+                            border: 1px solid #ccc;
+                            display: inline-block;
+                            font-size: 16px;
+                            line-height: 24px;
+                            font-weight: 400;
+                            width: 110px;
+                            height: 32px;
+                            padding: 6px 28px;
+                            cursor: pointer;
+                            border: 0.5px solid $videoDesc;
+                            border-radius: 4px;
+                        }
+
+                    }
+
+                    .job_formDesc{
+
+                        p{
+                            font-size: 12px;
+                            line-height: 16px;
+                            color: $gray;
+                            padding: 4px 0;
+                        }
+
+                    }
+                    .job_formInitial{
+                        display: flex;
+                        flex-direction: column;
+
+                        input{
+                            width: 196px;
+                        }
+
+                    }
+
+
+                    .job_formBtn{
+                        position: relative;
+                        .btnSubmit{
+                            margin-bottom: 20px;
+                            @include btn{
+                                color: $white;
+                                background-color: $placeholder;
+                                border-radius: 4px;
+                                border: none;
+                                padding: 12px 32px;
+
+                            }
+                            &:hover{
+                                color: $white;
+                                background-color: $black;
+                            }
+                            
+                        }
+                        label{
+                            font-family: 'Inter', sans-serif;
+                            font-size: 12px;
+                            line-height: 16px;
+                            font-weight: normal;
+                            display: block;
+                            color: $darkText;
+                            position: absolute;
+                            left: 30px;
+                            bottom: -30px;
+
+                            input{
+                                width: 18px;
+                                height: 18px;
+                                
+                                display: inline-block;
+                                margin-top: 5px;
+                                position: absolute;
+                                left: -30px;
+                                bottom: -5px;
+
+                            }
+                        }
+                    }    
+                }
+            }
+        }
+    }
+}
+@media(max-width:1025px){
+    .job_sec{
+        // min-height: calc(100vh - 218px);
+        // width: 100%;
+    
+        .job_wrap{
+            // border-top: 1px solid $videoDesc;
+            // padding-top: 40px;
+    
+            .job_block{
+                // display: flex;
+                // justify-content: space-between;
+    
+                .job_desc{
+                    flex-basis: 50%;
+                    width: 50%;
+    
+                    .job_descText{
+                        // padding: 24px 0 24px;
+    
+                        p{
+                            // padding-bottom: 8px;
+                        }
+    
+                    }
+                    .job_descReq{
+    
+                        .job_descReqArrow{
+                            // padding: 8px 0 4px 30px;
+                            p{
+                                // padding: 4px 0;
+                            }
+    
+    
+                            span{
+                                // color: $green;
+                                // margin-left: -30px;
+                                // padding-right: 8px;
+                            }
+    
+                        }
+                        p{
+                            // padding: 4px 0;
+                        }
+                        
+    
+    
+                    }
+                    .job_descLogo{
+                        // margin-top: 28px;
+                        ul{
+                            // display: flex;
+                            // justify-content: start;
+                            li{
+                                // width: 98px;
+                                // height: 79px;
+                                // border: 1px solid $videoDesc;
+                                // position: relative;
+                                img{
+                                    // position: absolute;
+                                    // left: 50%;
+                                    // top: 50%;
+                                    // transform: translate(-50%, -50%);
+                                    // display: block;
+                                    // width: 90%;
+                                };
+                            }
+                        }
+                    }
+    
+                }
+    
+                .job_form{
+                    flex-basis: 50%;
+                    // margin-left: 40px;
+                    // margin-bottom: 110px;
+    
+                    form{
+                        // width: 437px;
+                        // height: 100%;
+                        // background-color: $white;
+                        // margin-top: 0;
+                        // margin-bottom: 50px;
+                        // max-width: 100%;
+    
+                        h4{
+                            // padding: 21px 0 0 24px;
+                        }
+                        .form_title{
+                            // font-size: 24px;
+                            // line-height: 24px;
+                            // font-weight: bold;
+                        }
+    
+                        label{
+                            // font-family: 'Inter', sans-serif;
+                            // font-size: 16px;
+                            // line-height: 24px;
+                            // font-weight: bold;
+                            // color: $darkText;
+                        }
+                        input{
+                            // width: 100%;
+                            // height: 48px;
+                            // padding-left: 10px;
+                            // background-color: $inputBg;
+                            // border: 0.5px solid $videoDesc;
+                            // border-radius: 4px;
+                            // box-sizing: border-box;
+                            
+                        }
+                        textarea{
+                            // width: 100%;
+                            // height: 120px;
+                            // padding-left: 10px;
+                            // background-color: $inputBg;
+                            // border: 0.5px solid $videoDesc;
+                            // border-radius: 4px;
+                            // padding: 12px 0 0 16px;
+                            // box-sizing: border-box;
+                            
+                        }
+                        input,
+                        textarea{
+    
+                            // &::placeholder{
+                            //     font-family: 'Inter', sans-serif;
+                            //     font-size: 16px;
+                            //     line-height: 24px;
+                            //     font-weight: 500;
+                            //     color: $placeholder;
+                            // }
+    
+                        }
+    
+                        .job_formName,
+                        .job_formPhone,
+                        .job_formEmail,
+                        .job_formResume,
+                        .job_formText,
+                        .job_formDesc,
+                        .job_formBtn,
+                        .job_formInitial,
+                        .job_formCommet{
+                            // margin-top: 14px;
+                            // margin-bottom: 0;
+                            // padding: 0 24px;
+    
+                        }
+                        
+                        .job_formName{
+                            // display: flex;
+                            // justify-content: space-between;
+                            
+                            .job_formItem{
+                                // flex-basis: 49%;
+                            }
+                        }
+    
+                        .job_formPhone{
+                            // display: flex;
+                            // justify-content: space-between;
+                            
+    
+                            .job_phone{
+                                // flex-basis: 70%;
+                            }
+                            .job_code{
+                                // flex-basis: 28%;
+                            }
+                        }
+    
+                        .job_formResume{
+                            // display: flex;
+                            // flex-direction: column;
+    
+                            input[type="file"] {
+                                // display: none;
+                            }
+                            .fileInput{
+                                // border: 1px solid #ccc;
+                                // display: inline-block;
+                                // font-size: 16px;
+                                // line-height: 24px;
+                                // font-weight: 400;
+                                // width: 110px;
+                                // height: 32px;
+                                // padding: 6px 28px;
+                                // cursor: pointer;
+                                // border: 0.5px solid $videoDesc;
+                                // border-radius: 4px;
+                            }
+    
+                        }
+    
+                        .job_formDesc{
+    
+                            p{
+                                // font-size: 12px;
+                                // line-height: 16px;
+                                // color: $gray;
+                                // padding: 4px 0;
+                            }
+    
+                        }
+                        .job_formInitial{
+                            // display: flex;
+                            // flex-direction: column;
+    
+                            // input{
+                            //     width: 196px;
+                            // }
+    
+                        }
+    
+    
+                        .job_formBtn{
+                            // position: relative;
+                            .btnSubmit{
+                            //     margin-bottom: 20px;
+                            //     @include btn{
+                            //         color: $white;
+                            //         background-color: $placeholder;
+                            //         border-radius: 4px;
+                            //         border: none;
+                            //         padding: 12px 32px;
+    
+                            //     }
+                            //     &:hover{
+                            //         color: $white;
+                            //         background-color: $black;
+                            //     }
+                                
+                            }
+                            label{
+                                // font-family: 'Inter', sans-serif;
+                                // font-size: 12px;
+                                // line-height: 16px;
+                                // font-weight: normal;
+                                // display: block;
+                                // color: $darkText;
+                                // position: absolute;
+                                // left: 30px;
+                                // bottom: -30px;
+    
+                                // input{
+                                //     width: 18px;
+                                //     height: 18px;
+                                    
+                                //     display: inline-block;
+                                //     margin-top: 5px;
+                                //     position: absolute;
+                                //     left: -30px;
+                                //     bottom: -5px;
+    
+                                // }
+                            }
+                        }    
+                    }
+                }
+            }
+        }
+    }
+
+}
+@media(max-width:768px){
+    .job_sec{
+        // min-height: calc(100vh - 218px);
+        // width: 100%;
+    
+        .job_wrap{
+            // border-top: 1px solid $videoDesc;
+            // padding-top: 40px;
+    
+            .job_block{
+                // display: flex;
+                flex-direction: column;
+                // justify-content: space-between;
+    
+                .job_desc{
+                    flex-basis: 100%;
+                    width: 100%;
+    
+                    .job_descText{
+                        // padding: 24px 0 24px;
+    
+                        p{
+                            // padding-bottom: 8px;
+                        }
+    
+                    }
+                    .job_descReq{
+    
+                        .job_descReqArrow{
+                            // padding: 8px 0 4px 30px;
+                            p{
+                                // padding: 4px 0;
+                            }
+    
+    
+                            span{
+                                // color: $green;
+                                // margin-left: -30px;
+                                // padding-right: 8px;
+                            }
+    
+                        }
+                        p{
+                            // padding: 4px 0;
+                        }
+                        
+    
+    
+                    }
+                    .job_descLogo{
+                        margin: 28px 0;
+
+                        ul{
+                            // display: flex;
+                            flex-wrap: wrap;
+                            justify-content: center;
+                            li{
+                                // width: 98px;
+                                // height: 79px;
+                                // border: 1px solid $videoDesc;
+                                // position: relative;
+                                margin-left: -1px;
+                                margin-top: -1px;
+                                img{
+                                    // position: absolute;
+                                    // left: 50%;
+                                    // top: 50%;
+                                    // transform: translate(-50%, -50%);
+                                    // display: block;
+                                    // width: 90%;
+                                };
+                            }
+                        }
+                    }
+    
+                }
+    
+                .job_form{
+                    flex-basis: 100%;
+                    margin: 0 auto;
+                    margin-bottom: 0;
+    
+                    form{
+                        // width: 437px;
+                        // height: 100%;
+                        // background-color: $white;
+                        // margin-top: 0;
+                        margin-bottom: 0;
+                        // max-width: 100%;
+    
+                        h4{
+                            // padding: 21px 0 0 24px;
+                        }
+                        .form_title{
+                            // font-size: 24px;
+                            // line-height: 24px;
+                            // font-weight: bold;
+                        }
+    
+                        label{
+                            // font-family: 'Inter', sans-serif;
+                            // font-size: 16px;
+                            // line-height: 24px;
+                            // font-weight: bold;
+                            // color: $darkText;
+                        }
+                        input{
+                            // width: 100%;
+                            // height: 48px;
+                            // padding-left: 10px;
+                            // background-color: $inputBg;
+                            // border: 0.5px solid $videoDesc;
+                            // border-radius: 4px;
+                            // box-sizing: border-box;
+                            
+                        }
+                        textarea{
+                            // width: 100%;
+                            // height: 120px;
+                            // padding-left: 10px;
+                            // background-color: $inputBg;
+                            // border: 0.5px solid $videoDesc;
+                            // border-radius: 4px;
+                            // padding: 12px 0 0 16px;
+                            // box-sizing: border-box;
+                            
+                        }
+                        input,
+                        textarea{
+    
+                            // &::placeholder{
+                            //     font-family: 'Inter', sans-serif;
+                            //     font-size: 16px;
+                            //     line-height: 24px;
+                            //     font-weight: 500;
+                            //     color: $placeholder;
+                            // }
+    
+                        }
+    
+                        .job_formName,
+                        .job_formPhone,
+                        .job_formEmail,
+                        .job_formResume,
+                        .job_formText,
+                        .job_formDesc,
+                        .job_formBtn,
+                        .job_formInitial,
+                        .job_formCommet{
+                            // margin-top: 14px;
+                            // margin-bottom: 0;
+                            // padding: 0 24px;
+    
+                        }
+                        
+                        .job_formName{
+                            // display: flex;
+                            // justify-content: space-between;
+                            
+                            .job_formItem{
+                                // flex-basis: 49%;
+                            }
+                        }
+    
+                        .job_formPhone{
+                            // display: flex;
+                            // justify-content: space-between;
+                            
+    
+                            .job_phone{
+                                // flex-basis: 70%;
+                            }
+                            .job_code{
+                                // flex-basis: 28%;
+                            }
+                        }
+    
+                        .job_formResume{
+                            // display: flex;
+                            // flex-direction: column;
+    
+                            input[type="file"] {
+                                // display: none;
+                            }
+                            .fileInput{
+                                // border: 1px solid #ccc;
+                                // display: inline-block;
+                                // font-size: 16px;
+                                // line-height: 24px;
+                                // font-weight: 400;
+                                // width: 110px;
+                                // height: 32px;
+                                // padding: 6px 28px;
+                                // cursor: pointer;
+                                // border: 0.5px solid $videoDesc;
+                                // border-radius: 4px;
+                            }
+    
+                        }
+    
+                        .job_formDesc{
+    
+                            p{
+                                // font-size: 12px;
+                                // line-height: 16px;
+                                // color: $gray;
+                                // padding: 4px 0;
+                            }
+    
+                        }
+                        .job_formInitial{
+                            // display: flex;
+                            // flex-direction: column;
+    
+                            // input{
+                            //     width: 196px;
+                            // }
+    
+                        }
+    
+    
+                        .job_formBtn{
+                            // position: relative;
+                            .btnSubmit{
+                            //     margin-bottom: 20px;
+                            //     @include btn{
+                            //         color: $white;
+                            //         background-color: $placeholder;
+                            //         border-radius: 4px;
+                            //         border: none;
+                            //         padding: 12px 32px;
+    
+                            //     }
+                            //     &:hover{
+                            //         color: $white;
+                            //         background-color: $black;
+                            //     }
+                                
+                            }
+                            label{
+                                // font-family: 'Inter', sans-serif;
+                                // font-size: 12px;
+                                // line-height: 16px;
+                                // font-weight: normal;
+                                // display: block;
+                                // color: $darkText;
+                                // position: absolute;
+                                // left: 30px;
+                                // bottom: -30px;
+    
+                                // input{
+                                //     width: 18px;
+                                //     height: 18px;
+                                    
+                                //     display: inline-block;
+                                //     margin-top: 5px;
+                                //     position: absolute;
+                                //     left: -30px;
+                                //     bottom: -5px;
+    
+                                // }
+                            }
+                        }    
+                    }
+                }
+            }
+        }
+    }
+
+}
+@media(max-width:420px){
+    .job_sec{
+        // min-height: calc(100vh - 218px);
+        // width: 100%;
+    
+        .job_wrap{
+            // border-top: 1px solid $videoDesc;
+            padding: 15px 0 0 0;
+    
+            .job_block{
+                // display: flex;
+                // flex-direction: column;
+                // justify-content: space-between;
+
+    
+                .job_desc{
+                    flex-basis: 100%;
+                    width: 95%;
+                    padding: 0 15px;
+    
+                    .job_descText{
+                        // padding: 24px 0 24px;
+    
+                        p{
+                            // padding-bottom: 8px;
+                        }
+    
+                    }
+                    .job_descReq{
+    
+                        .job_descReqArrow{
+                            // padding: 8px 0 4px 30px;
+                            p{
+                                // padding: 4px 0;
+                            }
+    
+    
+                            span{
+                                // color: $green;
+                                // margin-left: -30px;
+                                // padding-right: 8px;
+                            }
+    
+                        }
+                        p{
+                            // padding: 4px 0;
+                        }
+                        
+    
+    
+                    }
+                    .job_descLogo{
+                        // margin: 28px 0;
+
+                        ul{
+                            // display: flex;
+                            // flex-wrap: wrap;
+                            // justify-content: center;
+                            li{
+                                // width: 98px;
+                                // height: 79px;
+                                // border: 1px solid $videoDesc;
+                                // position: relative;
+                                // margin-left: -1px;
+                                // margin-top: -1px;
+                                img{
+                                    // position: absolute;
+                                    // left: 50%;
+                                    // top: 50%;
+                                    // transform: translate(-50%, -50%);
+                                    // display: block;
+                                    // width: 90%;
+                                };
+                            }
+                        }
+                    }
+    
+                }
+    
+                .job_form{
+                    // flex-basis: 100%;
+                    // margin: 0 auto;
+                    // margin-bottom: 110px;
+    
+                    form{
+                        width: 100vw;
+                        // height: 100%;
+                        // background-color: $white;
+                        // margin-top: 0;
+                        // margin-bottom: 50px;
+                        // max-width: 100%;
+    
+                        h4{
+                            // padding: 21px 0 0 24px;
+                        }
+                        .form_title{
+                            // font-size: 24px;
+                            // line-height: 24px;
+                            // font-weight: bold;
+                        }
+    
+                        label{
+                            // font-family: 'Inter', sans-serif;
+                            // font-size: 16px;
+                            // line-height: 24px;
+                            // font-weight: bold;
+                            // color: $darkText;
+                        }
+                        input{
+                            // width: 100%;
+                            // height: 48px;
+                            // padding-left: 10px;
+                            // background-color: $inputBg;
+                            // border: 0.5px solid $videoDesc;
+                            // border-radius: 4px;
+                            // box-sizing: border-box;
+                            
+                        }
+                        textarea{
+                            // width: 100%;
+                            // height: 120px;
+                            // padding-left: 10px;
+                            // background-color: $inputBg;
+                            // border: 0.5px solid $videoDesc;
+                            // border-radius: 4px;
+                            // padding: 12px 0 0 16px;
+                            // box-sizing: border-box;
+                            
+                        }
+                        input,
+                        textarea{
+    
+                            // &::placeholder{
+                            //     font-family: 'Inter', sans-serif;
+                            //     font-size: 16px;
+                            //     line-height: 24px;
+                            //     font-weight: 500;
+                            //     color: $placeholder;
+                            // }
+    
+                        }
+    
+                        .job_formName,
+                        .job_formPhone,
+                        .job_formEmail,
+                        .job_formResume,
+                        .job_formText,
+                        .job_formDesc,
+                        .job_formBtn,
+                        .job_formInitial,
+                        .job_formCommet{
+                            // margin-top: 14px;
+                            // margin-bottom: 0;
+                            // padding: 0 24px;
+    
+                        }
+                        
+                        .job_formName{
+                            // display: flex;
+                            flex-direction: column;
+                            // justify-content: space-between;
+                            
+                            .job_formItem{
+                                // flex-basis: 49%;
+                                &:last-child{
+                                    margin-top: 14px;
+                                }
+                            }
+                            
+                        }
+    
+                        .job_formPhone{
+                            // display: flex;
+                            // justify-content: space-between;
+                            
+    
+                            .job_phone{
+                                // flex-basis: 70%;
+                            }
+                            .job_code{
+                                // flex-basis: 28%;
+                            }
+                        }
+    
+                        .job_formResume{
+                            // display: flex;
+                            // flex-direction: column;
+    
+                            input[type="file"] {
+                                // display: none;
+                            }
+                            .fileInput{
+                                // border: 1px solid #ccc;
+                                // display: inline-block;
+                                // font-size: 16px;
+                                // line-height: 24px;
+                                // font-weight: 400;
+                                // width: 110px;
+                                // height: 32px;
+                                // padding: 6px 28px;
+                                // cursor: pointer;
+                                // border: 0.5px solid $videoDesc;
+                                // border-radius: 4px;
+                            }
+    
+                        }
+    
+                        .job_formDesc{
+    
+                            p{
+                                // font-size: 12px;
+                                // line-height: 16px;
+                                // color: $gray;
+                                // padding: 4px 0;
+                            }
+    
+                        }
+                        .job_formInitial{
+                            // display: flex;
+                            // flex-direction: column;
+    
+                            // input{
+                            //     width: 196px;
+                            // }
+    
+                        }
+    
+    
+                        .job_formBtn{
+                            // position: relative;
+                            .btnSubmit{
+                            //     margin-bottom: 20px;
+                            //     @include btn{
+                            //         color: $white;
+                            //         background-color: $placeholder;
+                            //         border-radius: 4px;
+                            //         border: none;
+                            //         padding: 12px 32px;
+    
+                            //     }
+                            //     &:hover{
+                            //         color: $white;
+                            //         background-color: $black;
+                            //     }
+                                
+                            }
+                            label{
+                                // font-family: 'Inter', sans-serif;
+                                // font-size: 12px;
+                                // line-height: 16px;
+                                // font-weight: normal;
+                                // display: block;
+                                // color: $darkText;
+                                // position: absolute;
+                                // left: 30px;
+                                // bottom: -30px;
+    
+                                // input{
+                                //     width: 18px;
+                                //     height: 18px;
+                                    
+                                //     display: inline-block;
+                                //     margin-top: 5px;
+                                //     position: absolute;
+                                //     left: -30px;
+                                //     bottom: -5px;
+    
+                                // }
+                            }
+                        }    
+                    }
+                }
+            }
+        }
+    }
+
+
+}
+@media(max-width:350px){
+    .job_sec{
+        // min-height: calc(100vh - 218px);
+        // width: 100%;
+    
+        .job_wrap{
+            // border-top: 1px solid $videoDesc;
+            // padding: 15px 0 0 0;
+    
+            .job_block{
+                // display: flex;
+                // flex-direction: column;
+                // justify-content: space-between;
+
+    
+                .job_desc{
+                    // flex-basis: 100%;
+                    // width: 95%;
+                    // padding: 0 15px;
+    
+                    .job_descText{
+                        // padding: 24px 0 24px;
+    
+                        p{
+                            // padding-bottom: 8px;
+                        }
+    
+                    }
+                    .job_descReq{
+    
+                        .job_descReqArrow{
+                            // padding: 8px 0 4px 30px;
+                            p{
+                                // padding: 4px 0;
+                            }
+    
+    
+                            span{
+                                // color: $green;
+                                // margin-left: -30px;
+                                // padding-right: 8px;
+                            }
+    
+                        }
+                        p{
+                            // padding: 4px 0;
+                        }
+                        
+    
+    
+                    }
+                    .job_descLogo{
+                        // margin: 28px 0;
+
+                        ul{
+                            // display: flex;
+                            // flex-wrap: wrap;
+                            // justify-content: center;
+                            li{
+                                // width: 98px;
+                                // height: 79px;
+                                // border: 1px solid $videoDesc;
+                                // position: relative;
+                                // margin-left: -1px;
+                                // margin-top: -1px;
+                                img{
+                                    // position: absolute;
+                                    // left: 50%;
+                                    // top: 50%;
+                                    // transform: translate(-50%, -50%);
+                                    // display: block;
+                                    // width: 90%;
+                                };
+                            }
+                        }
+                    }
+    
+                }
+    
+                .job_form{
+                    // flex-basis: 100%;
+                    // margin: 0 auto;
+                    // margin-bottom: 110px;
+    
+                    form{
+                        // width: 100vw;
+                        // height: 100%;
+                        // background-color: $white;
+                        // margin-top: 0;
+                        // margin-bottom: 50px;
+                        // max-width: 100%;
+    
+                        h4{
+                            // padding: 21px 0 0 24px;
+                        }
+                        .form_title{
+                            // font-size: 24px;
+                            // line-height: 24px;
+                            // font-weight: bold;
+                        }
+    
+                        label{
+                            // font-family: 'Inter', sans-serif;
+                            // font-size: 16px;
+                            // line-height: 24px;
+                            // font-weight: bold;
+                            // color: $darkText;
+                        }
+                        input{
+                            // width: 100%;
+                            // height: 48px;
+                            // padding-left: 10px;
+                            // background-color: $inputBg;
+                            // border: 0.5px solid $videoDesc;
+                            // border-radius: 4px;
+                            // box-sizing: border-box;
+                            
+                        }
+                        textarea{
+                            // width: 100%;
+                            // height: 120px;
+                            // padding-left: 10px;
+                            // background-color: $inputBg;
+                            // border: 0.5px solid $videoDesc;
+                            // border-radius: 4px;
+                            // padding: 12px 0 0 16px;
+                            // box-sizing: border-box;
+                            
+                        }
+                        input,
+                        textarea{
+    
+                            // &::placeholder{
+                            //     font-family: 'Inter', sans-serif;
+                            //     font-size: 16px;
+                            //     line-height: 24px;
+                            //     font-weight: 500;
+                            //     color: $placeholder;
+                            // }
+    
+                        }
+    
+                        .job_formName,
+                        .job_formPhone,
+                        .job_formEmail,
+                        .job_formResume,
+                        .job_formText,
+                        .job_formDesc,
+                        .job_formBtn,
+                        .job_formInitial,
+                        .job_formCommet{
+                            // margin-top: 14px;
+                            // margin-bottom: 0;
+                            // padding: 0 24px;
+    
+                        }
+                        
+                        .job_formName{
+                            // display: flex;
+                            // justify-content: space-between;
+                            
+                            .job_formItem{
+                                // flex-basis: 49%;
+                            }
+                        }
+    
+                        .job_formPhone{
+                            // display: flex;
+                            flex-direction: column;
+                            // justify-content: space-between;
+                            
+    
+                            .job_phone{
+                                // flex-basis: 70%;
+                            }
+                            .job_code{
+                                margin-top: 14px;
+                                // flex-basis: 28%;
+                            }
+                        }
+    
+                        .job_formResume{
+                            // display: flex;
+                            // flex-direction: column;
+    
+                            input[type="file"] {
+                                // display: none;
+                            }
+                            .fileInput{
+                                // border: 1px solid #ccc;
+                                // display: inline-block;
+                                // font-size: 16px;
+                                // line-height: 24px;
+                                // font-weight: 400;
+                                // width: 110px;
+                                // height: 32px;
+                                // padding: 6px 28px;
+                                // cursor: pointer;
+                                // border: 0.5px solid $videoDesc;
+                                // border-radius: 4px;
+                            }
+    
+                        }
+    
+                        .job_formDesc{
+    
+                            p{
+                                // font-size: 12px;
+                                // line-height: 16px;
+                                // color: $gray;
+                                // padding: 4px 0;
+                            }
+    
+                        }
+                        .job_formInitial{
+                            // display: flex;
+                            // flex-direction: column;
+    
+                            // input{
+                            //     width: 196px;
+                            // }
+    
+                        }
+    
+    
+                        .job_formBtn{
+                            // position: relative;
+                            .btnSubmit{
+                            //     margin-bottom: 20px;
+                            //     @include btn{
+                            //         color: $white;
+                            //         background-color: $placeholder;
+                            //         border-radius: 4px;
+                            //         border: none;
+                            //         padding: 12px 32px;
+    
+                            //     }
+                            //     &:hover{
+                            //         color: $white;
+                            //         background-color: $black;
+                            //     }
+                                
+                            }
+                            label{
+                                // font-family: 'Inter', sans-serif;
+                                // font-size: 12px;
+                                // line-height: 16px;
+                                // font-weight: normal;
+                                // display: block;
+                                // color: $darkText;
+                                // position: absolute;
+                                // left: 30px;
+                                // bottom: -30px;
+    
+                                // input{
+                                //     width: 18px;
+                                //     height: 18px;
+                                    
+                                //     display: inline-block;
+                                //     margin-top: 5px;
+                                //     position: absolute;
+                                //     left: -30px;
+                                //     bottom: -5px;
+    
+                                // }
+                            }
+                        }    
+                    }
+                }
+            }
+        }
+    }
+
+
+}

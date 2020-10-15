@@ -1,0 +1,426 @@
+.press_sec{
+    min-height: calc(100vh - 218px);
+    width: 100%;
+    .press_title{
+        display: block;  
+    }
+    .press_wrap{
+        .press{
+            border-top: 1px solid $videoDesc;
+
+            h2{
+                padding: 39px 0 27px;
+            }
+            .deviderDoble{
+                border-top: 4px solid $devider;
+                position: relative;
+
+                &::after{
+                    content: "";
+                    height: 1px;
+                    width: 100%;
+                    
+                    background: $devider;
+                    display: block;
+                    position: absolute;
+                    top: 4px;
+                    left: 0;
+                }
+        
+            }
+            .press_block{
+                display: flex;
+                justify-content: space-between;
+
+                .press_items{
+                    flex-basis: 72%;
+                    margin-bottom: 80px;
+
+                    .press_item{
+                        display: flex;
+                        justify-content: space-between;
+                        padding: 40px 0;
+
+                        .press_itemImg{
+                            flex-basis: 25%;
+                            img{
+
+                                margin: 0 auto;
+                                display: block;
+                                padding-top: 13px;
+                            }
+                        }
+
+                        .press_itemText{
+                            flex-basis: 73%;
+                        }
+                    }
+
+                    .press_featured{
+                        padding: 10px 0;
+        
+                        h4{
+                            padding: 16px;
+                        }
+        
+                        ul{
+                            display: flex;
+                            justify-content: start;
+                            flex-wrap: wrap;
+                            li{
+                                width: 264px;
+                                height: 168px;
+                                border: 1px solid $videoDesc;
+                                position: relative;
+                                display: block;
+                                img{
+                                    position: absolute;
+                                    left: 50%;
+                                    top: 50%;
+                                    transform: translate(-50%, -50%);
+                                    width: 80%;
+                                }
+        
+                                p{
+                                    position: absolute;
+                                    left: 50%;
+                                    bottom: 15px;
+                                    transform: translateX(-50%);
+                                }
+                            }
+                        }
+                    }
+                }
+                .press_quote{
+                    flex-basis: 25%;
+                    padding: 40px 0;
+                    position: sticky;
+                    align-self: flex-start;
+                    top: 2em;
+                }
+            }
+        }  
+    }  
+}
+@media(max-width:1025px){
+    .press_sec{
+        // min-height: calc(100vh - 218px);
+        // width: 100%;
+        .press_title{
+            // display: block;  
+        }
+        .press_wrap{
+            .press{
+                // border-top: 1px solid $videoDesc;
+    
+                h2{
+                    // padding: 39px 0 27px;
+                }
+                .press_block{
+                    // display: flex;
+                    // justify-content: space-between;
+    
+                    .press_items{
+                        // flex-basis: 72%;
+                        // margin-bottom: 80px;
+    
+                        .press_item{
+                            // display: flex;
+                            // justify-content: space-between;
+                            // padding: 40px 0;
+    
+                            .press_itemImg{
+                                // flex-basis: 25%;
+                                img{
+    
+                                    // margin: 0 auto;
+                                    // display: block;
+                                    // padding-top: 13px;
+                                }
+                            }
+    
+                            .press_itemText{
+                                // flex-basis: 73%;
+                            }
+                        }
+    
+                        .press_featured{
+                            // padding: 10px 0;
+            
+                            h4{
+                                // padding: 16px;
+                            }
+            
+                            ul{
+                                // display: flex;
+                                justify-content: center;
+                                // flex-wrap: wrap;
+                                li{
+                                    // width: 264px;
+                                    // height: 168px;
+                                    // border: 1px solid $videoDesc;
+                                    // position: relative;
+                                    // display: block;
+                                    img{
+                                        // position: absolute;
+                                        // left: 50%;
+                                        // top: 50%;
+                                        // transform: translate(-50%, -50%);
+                                        // width: 80%;
+                                    }
+            
+                                    p{
+                                        // position: absolute;
+                                        // left: 50%;
+                                        // bottom: 15px;
+                                        // transform: translateX(-50%);
+                                    }
+                                }
+                            }
+                        }
+                    }
+                    .press_quote{
+                        // flex-basis: 25%;
+                        // padding: 40px 0;
+                        // position: sticky;
+                        // align-self: flex-start;
+                        // top: 2em;
+                    }
+                }
+            }  
+        }  
+    }
+
+}
+@media(max-width:768px){
+    .press_sec{
+        // min-height: calc(100vh - 218px);
+        // width: 100%;
+        .press_title{
+            // display: block;  
+        }
+        .press_wrap{
+            .press{
+                // border-top: 1px solid $videoDesc;
+    
+                h2{
+                    // padding: 39px 0 27px;
+                }
+                .deviderDoble{
+                    border-top: 1px solid $devider;
+                    // position: relative;
+    
+                    &::after{
+
+                        // content: "";
+                        // height: 1px;
+                        // width: 100%;
+                        
+                        // background: $devider;
+                        display: none;
+                        // position: absolute;
+                        // top: 4px;
+                        // left: 0;
+                    }
+            
+                }
+                
+                .press_block{
+                    // display: flex;
+                    flex-direction: column-reverse;
+                    // justify-content: space-between;
+    
+                    .press_items{
+                        // flex-basis: 72%;
+                        // margin-bottom: 80px;
+                        border-top: 1px solid $devider;
+                        
+    
+                        .press_item{
+                            // display: flex;
+                            flex-direction: column;
+                            // justify-content: space-between;
+                            padding: 10px 0;
+    
+                            .press_itemImg{
+                                flex-basis: 100%;
+                                justify-content: start;
+                                img{
+    
+                                    margin: 0;
+                                    // display: block;
+                                    padding: 13px;
+                                }
+                            }
+    
+                            .press_itemText{
+                                // flex-basis: 73%;
+                            }
+                        }
+    
+                        .press_featured{
+                            // padding: 10px 0;
+            
+                            h4{
+                                // padding: 16px;
+                            }
+            
+                            ul{
+                                // display: flex;
+                                // justify-content: center;
+                                // flex-wrap: wrap;
+                                li{
+                                    // width: 264px;
+                                    // height: 168px;
+                                    // border: 1px solid $videoDesc;
+                                    // position: relative;
+                                    // display: block;
+                                    img{
+                                        // position: absolute;
+                                        // left: 50%;
+                                        // top: 50%;
+                                        // transform: translate(-50%, -50%);
+                                        // width: 80%;
+                                    }
+            
+                                    p{
+                                        // position: absolute;
+                                        // left: 50%;
+                                        // bottom: 15px;
+                                        // transform: translateX(-50%);
+                                    }
+                                }
+                            }
+                        }
+                    }
+                    .press_quote{
+                        // flex-basis: 25%;
+                        // padding: 40px 0;
+                        position: static;
+                        // align-self: flex-start;
+                        // top: 2em;
+                    }
+                }
+            }  
+        }  
+    }
+
+}
+@media(max-width:570px){
+    .press_sec{
+        // min-height: calc(100vh - 218px);
+        // width: 100%;
+        .press_title{
+            // display: block;  
+        }
+        .press_wrap{
+            .press{
+                // border-top: 1px solid $videoDesc;
+    
+                h2{
+                    // padding: 39px 0 27px;
+                }
+                .deviderDoble{
+                    // border-top: 1px solid $devider;
+                    // position: relative;
+    
+                    &::after{
+
+                        // content: "";
+                        // height: 1px;
+                        // width: 100%;
+                        
+                        // background: $devider;
+                        // display: none;
+                        // position: absolute;
+                        // top: 4px;
+                        // left: 0;
+                    }
+            
+                }
+                
+                .press_block{
+                    // display: flex;
+                    // flex-direction: column-reverse;
+                    // justify-content: space-between;
+    
+                    .press_items{
+                        // flex-basis: 72%;
+                        // margin-bottom: 80px;
+                        // border-top: 1px solid $devider;
+                        
+    
+                        .press_item{
+                            // display: flex;
+                            // flex-direction: column;
+                            // justify-content: space-between;
+                            // padding: 10px 0;
+    
+                            .press_itemImg{
+                                // flex-basis: 100%;
+                                // justify-content: start;
+                                img{
+    
+                                    // margin: 0;
+                                    // display: block;
+                                    // padding: 13px;
+                                }
+                            }
+    
+                            .press_itemText{
+                                // flex-basis: 73%;
+                                padding-bottom: 20px;
+                                
+                            }
+                        }
+    
+                        .press_featured{
+                            // padding: 10px 0;
+            
+                            h4{
+                                // padding: 16px;
+                            }
+            
+                            ul{
+                                // display: flex;
+                                // justify-content: center;
+                                // flex-wrap: wrap;
+                                li{
+                                    flex-basis: 49%;
+                                    width: 100%;
+                                    // height: auto;
+                                    // // border: 1px solid $videoDesc;
+                                    // position: relative;
+                                    // display: block;
+                                    img{
+                                        // position: absolute;
+                                        // left: 50%;
+                                        // top: 50%;
+                                        // transform: translate(-50%, -50%);
+                                        // width: 80%;
+                                    }
+            
+                                    p{
+                                        // position: absolute;
+                                        // left: 50%;
+                                        bottom: 7px;
+                                        // transform: translateX(-50%);
+                                        font-size: 10px;
+                                    }
+                                }
+                            }
+                        }
+                    }
+                    .press_quote{
+                        // flex-basis: 25%;
+                        // padding: 40px 0;
+                        // position: static;
+                        // align-self: flex-start;
+                        // top: 2em;
+                    }
+                }
+            }  
+        }  
+    }
+
+}

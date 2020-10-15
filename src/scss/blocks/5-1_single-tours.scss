@@ -1,0 +1,2188 @@
+.singleTour_sec{
+
+
+    .singleTour_wrap{
+
+        .singleTour_mainContent{
+            display: flex;
+            justify-content: space-between;
+            margin-top: 45px;
+
+            .singleTour_infoBlock{
+                flex-basis: 70%;
+
+
+                .singleTour_infoTitle{
+                    padding-bottom: 20px;
+
+
+                    .singleTour_infoImg{
+                        padding: 20px 0;
+
+                        img{
+
+                        }
+
+                    }
+                }
+
+                .singleTour_priceInfo{
+                    display: flex;
+                    justify-content: space-between;
+
+                    .singleTour_priceItem{
+                        flex-basis: 25%;
+                        padding: 25px 0 40px;
+
+                    }
+
+                }
+
+                .singleTour_experience{
+                    display: flex;
+                    justify-content: space-between;
+                    padding: 20px 0 38px;
+
+                    .singleTour_experienceTitle{
+                        flex-basis: 30%;
+
+                    }
+
+                    .singleTour_experienceDesc{
+                        flex-basis: 70%;
+                        p{
+                            padding: 8px 0;
+
+                            span{
+                                color: $green;
+                                margin-left: -30px;
+                                padding-right: 15px;
+                            }
+                        }
+                    }
+                }
+                .singleTour_insidersBlock{
+                    padding: 16px 0 72px;
+
+
+                    .singleTour_insidersPeople{
+                        display: flex;
+                        justify-content: space-between;
+                        flex-wrap: wrap;
+                        // padding: 16px 0;
+
+                        .singleTour_insidersItem{
+                            flex-basis: 33%;
+                            display: flex;
+                            justify-content: space-between;
+                            
+
+                            .singleTour_insidersItemImg{
+                                width: 64px;
+                                height: 100%;
+                                display: block;
+                                img{
+                                    display: block;
+                                    padding-top: 15px;
+                                }
+                            }
+
+                            .singleTour_insidersItemText{
+                                padding: 15px 0 10px 17px;
+
+                                p{
+                                    color: $videoDesc;
+                                }
+                            }
+                        }   
+                    }
+                    .singleTour_insidersBtn{
+                        margin-top: 25px;
+                        // margin-bottom: 40px;
+
+                        a{
+                            @include btn{
+                                color:$black;
+                                background-color: $mainBg;
+                                font-weight: bold;
+                                
+                            }
+                            &:hover{
+                                color:$white;
+                                background-color: $black;
+
+                            }
+                        }
+                    }
+                }
+
+                .gettingHere_block{
+                    padding: 16px 0;
+
+                    .gettingHere_title{
+
+
+                    }
+
+                    .gettingHere_desc{
+                        display: flex;
+                        justify-content: space-between;
+                        
+
+                        .gettingHere_col{
+                            flex-basis: 49%;
+
+                            .gettingHere_img{
+                                padding: 25px 0;
+
+                                img{
+                                    display: block;
+                                    width: 100%;
+                                }
+
+                            }
+
+                            .gettingHere_info{
+                                // max-width: 80%;
+                                h5{
+                                    padding-bottom: 8px;
+                                }
+
+                                p{
+                                    padding: 0;
+                                }
+                                a{
+                                    display: block;
+                                    margin: 8px 0 16px;
+                                }
+
+                                img{
+                                    padding: 8px 8px 8px 0;
+
+                                }
+
+                                
+
+                                .gettingHere_sub{
+                                    display: flex;
+
+
+                                    img{
+                                        // padding: 8px 8px 8px 0;
+
+                                    }
+
+                                }
+
+                                .round{
+                                    // display: block;
+                                    // padding: 10px 17px;
+                                    // margin: 10px;
+                                    // border-radius: 50%;
+                                    // color: $white;
+
+                                }
+                                // .red{
+                                //     background-color: $red;
+                                // }
+                                // .green{
+                                //     background-color: $green;
+                                // }
+                                // .blue{
+                                //     background-color: $blue;
+                                // }
+                                // .brown{
+                                //     background-color: $brown;
+                                // }
+                                // .yellow{
+                                //     width: 12px;
+                                //     background-color: $yellow;
+                                //     color: $darkText;
+                                //     font-weight: bold;
+                                // }
+                            }
+                        }
+                    }
+
+                    .gettingHere_tourEnd{
+                        padding: 24px 0 37px;
+                        display: flex;
+                        justify-content: start;
+
+                        .gettingHere_tourEndTitel{
+                            flex-basis: 13%;
+
+
+                        }
+
+                        .gettingHere_tourEndDesc{
+                            max-width: 468px;
+                           
+
+                        }
+
+                    }
+                }
+
+                .singleTour_mediaBlock{
+                    padding: 15px 0 20px;
+
+                    .singleTour_mediaContent{
+                        padding: 15px 0;
+                        display: flex;
+                        justify-content: space-between;
+
+                        .singleTour_mediaItem{
+                            flex-basis: 49%;
+
+
+                            .mediaItem_img{
+                                position: relative;
+                                a{
+                                    position: absolute;
+                                    left: 10px;
+                                    bottom: 10px;
+                                    display: flex;
+
+                                    img{
+                                        display: block;
+                                        width: 40px;
+                                        height: 40px;
+                                        
+                                        margin: 10px auto;
+                                        border: 3px solid transparent;
+                                        border-radius: 50%;
+                                        transition-duration: 500ms;
+                                        transition-property: border ;
+                                    }
+                                    p{
+                                        color: $white;
+                                        font-size: 24px;
+                                        line-height: 24px;
+                                        padding: 20px 0 0 13px;
+                                    }
+            
+                                    &:hover{
+                                        img{
+                                            border: 3px solid rgba(255,255,255,0.7);
+                                        }
+                                    }
+
+                                }
+                                
+                                img{
+                                    display: block;
+                                    width: 100%;
+                                }
+                            }
+                            .mediaItem_text{
+                                padding-top: 16px;
+                            }
+
+                        }
+                    }
+                }
+
+                .singleTour_faqPolBlock{
+                    border-top: 1px solid $videoDesc;
+                    
+                    .singleTour_faq{
+                        padding: 15px 0 34px;
+                        display: flex;
+                        justify-content: space-between;
+
+                        a{
+                            color: $black;
+                            padding: 0;
+                            cursor: pointer;
+                            // border-radius: 5px;
+                            // transition-duration: 500ms;
+                            // transition-property: background-color, color;
+                            span{
+                                font-size: 25px;
+                                font-weight: 100;
+                            }
+                            &:hover{
+                                // color: $white;
+                                // background-color: $black;
+                            }
+
+                        }
+                    }
+                }
+                .singleTour_otherTours{
+                    padding: 15px 0 40px;
+
+                    article{
+                        margin: 16px 0;
+                    }
+
+                }
+
+                .tours_postPost{
+                    display: flex;
+                    flex-direction: row;
+                    background-color: $white;
+                    margin: 20px 0;
+
+                    
+
+                    .tours_postImg{
+                        flex-basis: 55%;
+                        img{
+                            display: block;
+                            width: 100%;
+                        }
+                    }
+    
+                    .tours_postContent{
+                        flex-basis: 45%;
+                        padding: 8px 15px;
+                        position: relative;
+    
+                        h5{
+                            margin-bottom: 15px;
+    
+                        }
+    
+                        .ourTours_btn{
+                            position: absolute;
+                            bottom: 16px;
+                            left: 16px;
+                            
+                            @include btn{
+                                background-color: $white;
+                                color: $black;
+                                font-weight: bold;
+                                
+                               
+                            }
+                            &:hover{
+                                color: $white;
+                                background-color: $black;
+    
+                            }
+                        }
+                    }
+                }
+            }
+
+            .singleTour_bookBlock{
+                flex-basis: 30%;
+                padding: 10px 10px;
+                margin-left: 20px;
+                position: sticky;
+                align-self: flex-start;
+                top: 2em;
+                width: 351px;
+                background-color: $white;
+                border-radius: 5px;
+
+                h4{
+                    display: block;
+                    padding-left: 10px;
+
+                }
+
+                h5{
+                    display: none;
+                    font-size: 18px;
+                    font-weight: bold;
+
+                }
+
+                form{
+                    padding: 10px;
+
+                    .bookTour_date{
+                        width: 100%;
+                        padding-bottom: 20px;
+                        input{
+                            width: 100%;
+                        }
+
+                    }
+                    .bookTour_adults,
+                    .bookTour_children{
+                        display: flex;
+                        justify-content: space-between;
+                        padding: 10px;
+                        border-top: 1px solid $videoDesc;
+
+                        p{
+                            &:first-child{
+                                width: 70px;
+                            }
+                        }
+
+                        .adultsMinus,
+                        .childrenMinus{
+                            padding: 4px 8px;
+                            color: $minus;
+                            border: 1px solid $minus;
+                            border-radius: 50%;
+                            cursor: pointer;
+
+                        }
+                        .adultsPlus,
+                        .childrenPlus{
+                            padding: 4px 8px;
+                            color: $green;
+                            border: 1px solid $green;
+                            border-radius: 50%;
+                            cursor: pointer;
+
+                        }
+                        #childrenItem,
+                        #adultsItem{
+                            width: 20px;
+                            border: none;
+                            font-size: 16px;
+                        }
+                    }
+
+                    .bookTour_btn{
+                        margin: 20px 0;
+                        a{
+                            display: block;
+
+                            @include btn{
+                                padding: 12px 110px;
+                            }
+                        }
+                    } 
+                }     
+            }
+        }
+    }
+}
+@media(max-width:768px){
+    .singleTour_sec{
+        .singleTour_wrap{
+            .singleTour_mainContent{
+                display: flex;
+                // justify-content: space-between;
+                // position: relative;
+                margin-top: 10px;
+
+    
+                .singleTour_infoBlock{
+                    flex-basis: 99%;
+                    width: 100%;
+
+    
+                    h2{
+                        max-width: 500px;
+                    }
+    
+                    .singleTour_infoTitle{
+    
+    
+                        .singleTour_infoImg{
+                            padding: 20px 0;
+    
+                            img{
+    
+                            }
+    
+                        }
+    
+                    }
+    
+                    .singleTour_priceInfo{
+                        display: flex;
+                        justify-content: space-between;
+    
+                        .singleTour_priceItem{
+                            flex-basis: 25%;
+                            padding: 25px 0 40px;
+    
+                        }
+    
+                    }
+    
+                    .singleTour_experience{
+                        display: flex;
+                        justify-content: space-between;
+                        padding: 16px 0;
+    
+                        .singleTour_experienceTitle{
+                            flex-basis: 30%;
+    
+                        }
+    
+                        .singleTour_experienceDesc{
+                            flex-basis: 70%;
+                            p{
+                                padding: 8px 0;
+    
+                                span{
+                                    color: $green;
+                                    margin-left: -30px;
+                                    padding-right: 15px;
+                                }
+                            }
+                        }
+                    }
+                    .singleTour_insidersBlock{
+                        padding: 16px 0;
+    
+    
+                        .singleTour_insidersPeople{
+                            display: flex;
+                            justify-content: space-between;
+                            flex-wrap: wrap;
+                            padding: 16px 0;
+    
+                            .singleTour_insidersItem{
+                                flex-basis: 33%;
+                                display: flex;
+                                justify-content: space-between;
+                                
+    
+                                .singleTour_insidersItemImg{
+                                    width: 64px;
+                                    height: 100%;
+                                    display: block;
+                                    img{
+                                        display: block;
+                                        padding-top: 35px;
+                                    }
+                                }
+    
+                                .singleTour_insidersItemText{
+                                    padding: 20px 0 20px 20px;
+    
+                                    p{
+                                        color: $videoDesc;
+                                    }
+                                }
+                            }   
+                        }
+                        .singleTour_insidersBtn{
+                            margin-top: 10px;
+                            margin-bottom: 40px;
+    
+                            a{
+                                @include btn{
+                                    color:$black;
+                                    background-color: $mainBg;
+                                    font-weight: bold;
+                                    
+                                }
+                                &:hover{
+                                    color:$white;
+                                    background-color: $black;
+    
+                                }
+                            }
+                        }
+                    }
+    
+                    .gettingHere_block{
+                        padding: 16px 0;
+    
+                        .gettingHere_title{
+    
+    
+                        }
+    
+                        .gettingHere_desc{
+                            display: flex;
+                            justify-content: space-between;
+    
+                            .gettingHere_col{
+                                flex-basis: 49%;
+    
+                                .gettingHere_img{
+    
+                                    img{
+                                        display: block;
+                                        width: 100%;
+                                    }
+    
+                                }
+    
+                                .gettingHere_info{
+    
+                                    p{
+                                        padding: 10px 0;
+                                    }
+    
+    
+                                    
+    
+                                    .gettingHere_sub{
+                                        display: flex;
+                                    }
+    
+                                    // .round{
+                                    //     display: block;
+                                    //     padding: 10px 17px;
+                                    //     margin: 10px;
+                                    //     border-radius: 50%;
+                                    //     color: $white;
+    
+                                    // }
+                                    // .red{
+                                    //     background-color: $red;
+                                    // }
+                                    // .green{
+                                    //     background-color: $green;
+                                    // }
+                                    // .blue{
+                                    //     background-color: $blue;
+                                    // }
+                                    // .brown{
+                                    //     background-color: $brown;
+                                    // }
+                                    // .yellow{
+                                    //     width: 12px;
+                                    //     background-color: $yellow;
+                                    //     color: $darkText;
+                                    //     font-weight: bold;
+                                    // }
+                                }
+                            }
+                        }
+    
+                        .gettingHere_tourEnd{
+    
+                        }
+                    }
+    
+                    .singleTour_mediaBlock{
+    
+                        .singleTour_mediaContent{
+                            padding: 20px 0;
+                            display: flex;
+                            justify-content: space-between;
+    
+                            .singleTour_mediaItem{
+                                flex-basis: 49%;
+    
+    
+                                .mediaItem_img{
+                                    position: relative;
+                                    a{
+                                        position: absolute;
+                                        left: 10px;
+                                        bottom: 10px;
+                                        display: flex;
+    
+                                        img{
+                                            display: block;
+                                            width: 40px;
+                                            height: 40px;
+                                            
+                                            margin: 10px auto;
+                                            border: 3px solid transparent;
+                                            border-radius: 50%;
+                                            transition-duration: 500ms;
+                                            transition-property: border ;
+                                        }
+                                        p{
+                                            color: $white;
+                                            font-size: 24px;
+                                            line-height: 24px;
+                                            padding: 20px 0 0 13px;
+                                        }
+                
+                                        &:hover{
+                                            img{
+                                                border: 3px solid rgba(255,255,255,0.7);
+                                            }
+                                        }
+    
+                                    }
+                                    
+                                    img{
+                                        display: block;
+                                        width: 100%;
+                                    }
+                                }
+    
+                            }
+                        }
+                    }
+    
+                    .singleTour_faqPolBlock{
+                        border-top: 1px solid $videoDesc;
+                        
+                        .singleTour_faq{
+                            padding: 15px 0;
+                            display: flex;
+                            justify-content: space-between;
+    
+                            a{
+                                color: $black;
+                                padding: 13px;
+                                border-radius: 5px;
+                                transition-duration: 500ms;
+                                transition-property: background-color, color;
+                                span{
+                                    font-size: 30px;
+                                }
+                                &:hover{
+                                    color: $white;
+                                    background-color: $black;
+                                }
+    
+                            }
+                        }
+                    }
+                    .singleTour_otherTours{
+                        padding: 15px 0 40px;
+                    }
+    
+                    .tours_postPost{
+                        display: flex;
+                        flex-direction: row;
+                        background-color: $white;
+                        margin: 20px 0;
+    
+                        .tours_postImg{
+                            flex-basis: 55%;
+                            img{
+                                display: block;
+                                width: 100%;
+                            }
+                        }
+        
+                        .tours_postContent{
+                            flex-basis: 45%;
+                            padding: 8px 15px;
+        
+                            h5{
+                                margin-bottom: 15px;
+        
+                            }
+        
+                            .ourTours_btn{
+                                
+                                @include btn{
+                                    background-color: $white;
+                                    color: $black;
+                                    font-weight: bold;
+                                    
+                                   
+                                }
+                                &:hover{
+                                    color: $white;
+                                    background-color: $black;
+        
+                                }
+                            }
+                        }
+                    }
+                }
+    
+                .singleTour_bookBlock{
+                    
+                    // display: block;
+                    // flex-basis: 30%;
+                    width: 90%;
+                    padding: 10px 10px;
+                    margin-left: 20px;
+                    position: fixed;
+                    // align-self: flex-start;
+                    top: 91%;
+                    // width: 351px;
+                    background-color: $white;
+                    border-radius: 5px;
+                    display: flex;
+                    justify-content: space-around;
+
+                    h4{
+                        display: none;
+
+                    }
+
+                    h5{
+                        display: block;
+
+                    }
+    
+                    form{
+                        padding: 0;
+
+    
+                        .bookTour_date{
+                            display: none;
+
+                            // width: 100%;
+                            // padding-bottom: 20px;
+                            // input{
+                            //     width: 100%;
+                            // }
+    
+                        }
+                        .bookTour_adults,
+                        .bookTour_children{
+                            display: none;
+                            // display: flex;
+                            // justify-content: space-between;
+                            // padding: 10px;
+                            // border-top: 1px solid $videoDesc;
+    
+                            p{
+                                // &:first-child{
+                                //     width: 70px;
+                                // }
+                            }
+    
+                            .adultsMinus,
+                            .childrenMinus{
+                                // padding: 4px 8px;
+                                // color: $minus;
+                                // border: 1px solid $minus;
+                                // border-radius: 50%;
+                                // cursor: pointer;
+    
+                            }
+                            .adultsPlus,
+                            .childrenPlus{
+                                // padding: 4px 8px;
+                                // color: $green;
+                                // border: 1px solid $green;
+                                // border-radius: 50%;
+                                // cursor: pointer;
+    
+                            }
+                            #childrenItem,
+                            #adultsItem{
+                                // width: 20px;
+                                // border: none;
+                                // font-size: 16px;
+                            }
+                        }
+    
+                        .bookTour_btn{
+
+                            margin: 0;
+                            a{
+                                // display: block;
+    
+                                // @include btn{
+                                //     padding: 12px 110px;
+                                // }
+                            }
+                        } 
+                    }     
+                }
+            }
+        }
+    }
+
+}
+@media(max-width:600px){
+    .singleTour_sec{
+        .singleTour_wrap{
+            .singleTour_mainContent{
+                display: flex;
+                // justify-content: space-between;
+                // position: relative;
+    
+                .singleTour_infoBlock{
+                    // flex-basis: 99%;
+                    // width: 100%;
+                    
+    
+                    h2{
+                        display: inline-block;
+                        max-width: 60%;
+                        
+                    }
+    
+                    .singleTour_infoTitle{
+                        text-align: center;
+    
+    
+                        .singleTour_infoImg{
+                            // padding: 20px 0;
+    
+                            img{
+    
+                            }
+    
+                        }
+    
+                    }
+    
+                    .singleTour_priceInfo{
+                        // display: flex;
+                        flex-wrap: wrap;
+                        // justify-content: space-between;
+    
+                        .singleTour_priceItem{
+                            flex-basis: 50%;
+                            // padding: 25px 0 40px;
+
+    
+                        }
+    
+                    }
+    
+                    .singleTour_experience{
+                        // display: flex;
+                        flex-direction: column;
+                        // justify-content: space-between;
+                        // padding: 16px 0;
+    
+                        .singleTour_experienceTitle{
+                            // flex-basis: 30%;
+    
+                        }
+    
+                        .singleTour_experienceDesc{
+                            // flex-basis: 70%;
+                            padding-left: 30px;
+                            p{
+                                // padding: 8px 0;
+    
+                                span{
+                                    // color: $green;
+                                    // margin-left: -30px;
+                                    // padding-right: 15px;
+                                }
+                            }
+                        }
+                    }
+                    .singleTour_insidersBlock{
+                        // padding: 16px 0;
+    
+    
+                        .singleTour_insidersPeople{
+                            // display: flex;
+                            flex-direction: column;
+                            // justify-content: space-between;
+                            // flex-wrap: wrap;
+                            // padding: 16px 0;
+    
+                            .singleTour_insidersItem{
+                                // flex-basis: 33%;
+                                // display: flex;
+                                justify-content: start;
+                                
+    
+                                .singleTour_insidersItemImg{
+                                    // width: 64px;
+                                    // height: 100%;
+                                    // display: block;
+                                    img{
+                                        // display: block;
+                                        // padding-top: 35px;
+                                    }
+                                }
+    
+                                .singleTour_insidersItemText{
+                                    // padding: 20px 0 20px 20px;
+    
+                                    p{
+                                        // color: $videoDesc;
+                                    }
+                                }
+                            }   
+                        }
+                        .singleTour_insidersBtn{
+                            // margin-top: 10px;
+                            // margin-bottom: 40px;
+    
+                            a{
+                                // @include btn{
+                                //     color:$black;
+                                //     background-color: $mainBg;
+                                //     font-weight: bold;
+                                    
+                                // }
+                                // &:hover{
+                                //     color:$white;
+                                //     background-color: $black;
+    
+                                // }
+                            }
+                        }
+                    }
+    
+                    .gettingHere_block{
+                        // padding: 16px 0;
+    
+                        .gettingHere_title{
+    
+    
+                        }
+    
+                        .gettingHere_desc{
+                            // display: flex;
+                            flex-direction: column;
+                            // justify-content: space-between;
+    
+                            .gettingHere_col{
+                                // flex-basis: 49%;
+                                margin: 10px 0 30px;
+    
+                                .gettingHere_img{
+    
+                                    img{
+                                        // display: block;
+                                        // width: 100%;
+                                    }
+    
+                                }
+    
+                                .gettingHere_info{
+    
+                                    p{
+                                        // padding: 10px 0;
+                                    }
+    
+    
+                                    
+    
+                                    .gettingHere_sub{
+                                        // display: flex;
+                                    }
+    
+                                    .round{
+                                        // display: block;
+                                        // padding: 10px 17px;
+                                        // margin: 10px;
+                                        // border-radius: 50%;
+                                        // color: $white;
+    
+                                    }
+                                    .red{
+                                        // background-color: $red;
+                                    }
+                                    .green{
+                                        // background-color: $green;
+                                    }
+                                    .blue{
+                                        // background-color: $blue;
+                                    }
+                                    .brown{
+                                        // background-color: $brown;
+                                    }
+                                    .yellow{
+                                        // width: 12px;
+                                        // background-color: $yellow;
+                                        // color: $darkText;
+                                        // font-weight: bold;
+                                    }
+                                }
+                            }
+                        }
+    
+                        .gettingHere_tourEnd{
+    
+                        }
+                    }
+    
+                    .singleTour_mediaBlock{
+    
+                        .singleTour_mediaContent{
+                            // padding: 20px 0;
+                            // display: flex;
+                            flex-direction: column;
+                            // justify-content: space-between;
+    
+                            .singleTour_mediaItem{
+                                margin: 10px 0 30px ;
+                                // flex-basis: 49%;
+    
+    
+                                .mediaItem_img{
+                                    // position: relative;
+                                    a{
+                                        // position: absolute;
+                                        // left: 10px;
+                                        // bottom: 10px;
+                                        // display: flex;
+    
+                                        img{
+                                            // display: block;
+                                            // width: 40px;
+                                            // height: 40px;
+                                            
+                                            // margin: 10px auto;
+                                            // border: 3px solid transparent;
+                                            // border-radius: 50%;
+                                            // transition-duration: 500ms;
+                                            // transition-property: border ;
+                                        }
+                                        p{
+                                            // color: $white;
+                                            // font-size: 24px;
+                                            // line-height: 24px;
+                                            // padding: 20px 0 0 13px;
+                                        }
+                
+                                        // &:hover{
+                                        //     img{
+                                        //         border: 3px solid rgba(255,255,255,0.7);
+                                        //     }
+                                        // }
+    
+                                    }
+                                    
+                                    img{
+                                        // display: block;
+                                        // width: 100%;
+                                    }
+                                }
+    
+                            }
+                        }
+                    }
+    
+                    .singleTour_faqPolBlock{
+                        // border-top: 1px solid $videoDesc;
+                        
+                        .singleTour_faq{
+                            // padding: 15px 0;
+                            // display: flex;
+                            // justify-content: space-between;
+    
+                            a{
+                                // color: $black;
+                                // padding: 13px;
+                                // border-radius: 5px;
+                                // transition-duration: 500ms;
+                                // transition-property: background-color, color;
+                                span{
+                                    // font-size: 30px;
+                                }
+                                // &:hover{
+                                //     color: $white;
+                                //     background-color: $black;
+                                // }
+    
+                            }
+                        }
+                    }
+                    .singleTour_otherTours{
+                        // padding: 15px 0 40px;
+                    }
+    
+                    .tours_postPost{
+                        // display: flex;
+                        flex-direction: column;
+                        // background-color: $white;
+                        // margin: 20px 0;
+    
+                        .tours_postImg{
+                            // flex-basis: 55%;
+                            img{
+                                // display: block;
+                                // width: 100%;
+                            }
+                        }
+        
+                        .tours_postContent{
+                            // flex-basis: 45%;
+                            // padding: 8px 15px;
+                            
+    
+                            p{
+                                font-size: 16px;
+                                
+                            }
+        
+                            h5{
+                                // margin-bottom: 15px;
+        
+                            }
+        
+                            .ourTours_btn{
+                                display: block;
+                                width: 100px;
+                                
+                            //     @include btn{
+                            //         background-color: $white;
+                            //         color: $black;
+                            //         font-weight: bold;
+                                    
+                                   
+                            //     }
+                            //     &:hover{
+                            //         color: $white;
+                            //         background-color: $black;
+        
+                            //     }
+                            }
+                        }
+                    }
+                }
+    
+                .singleTour_bookBlock{
+                    
+                    // display: block;
+                    // flex-basis: 30%;
+                    width: 90%;
+                    // padding: 10px 10px;
+                    margin: 0 ;
+                    // position: fixed;
+                    // align-self: flex-start;
+                    // top: 91%;
+                    // width: 351px;
+                    // background-color: $white;
+                    // border-radius: 5px;
+                    // display: flex;
+                    // justify-content: space-around;
+
+                    h4{
+                        // display: none;
+
+                    }
+
+                    h5{
+                        // display: block;
+
+                    }
+    
+                    form{
+                        // padding: 0;
+
+    
+                        .bookTour_date{
+                            // display: none;
+
+                            // width: 100%;
+                            // padding-bottom: 20px;
+                            // input{
+                            //     width: 100%;
+                            // }
+    
+                        }
+                        .bookTour_adults,
+                        .bookTour_children{
+                            // display: none;
+                            // display: flex;
+                            // justify-content: space-between;
+                            // padding: 10px;
+                            // border-top: 1px solid $videoDesc;
+    
+                            p{
+                                // &:first-child{
+                                //     width: 70px;
+                                // }
+                            }
+    
+                            .adultsMinus,
+                            .childrenMinus{
+                                // padding: 4px 8px;
+                                // color: $minus;
+                                // border: 1px solid $minus;
+                                // border-radius: 50%;
+                                // cursor: pointer;
+    
+                            }
+                            .adultsPlus,
+                            .childrenPlus{
+                                // padding: 4px 8px;
+                                // color: $green;
+                                // border: 1px solid $green;
+                                // border-radius: 50%;
+                                // cursor: pointer;
+    
+                            }
+                            #childrenItem,
+                            #adultsItem{
+                                // width: 20px;
+                                // border: none;
+                                // font-size: 16px;
+                            }
+                        }
+    
+                        .bookTour_btn{
+
+                            // margin: 0;
+                            a{
+                                // display: block;
+    
+                                @include btn{
+                                    padding: 12px 50px;
+                                }
+                            }
+                        } 
+                    }     
+                }
+            }
+        }
+    }
+
+}
+@media(max-width:375px){
+    .singleTour_sec{
+        .singleTour_wrap{
+            .singleTour_mainContent{
+                // display: flex;
+                // justify-content: space-between;
+                // position: relative;
+    
+                .singleTour_infoBlock{
+                    // flex-basis: 99%;
+                    // width: 100%;
+                    
+    
+                    h2{
+                        // display: inline-block;
+                        // max-width: 60%;
+                        
+                    }
+    
+                    .singleTour_infoTitle{
+                        // text-align: center;
+    
+    
+                        .singleTour_infoImg{
+                            // padding: 20px 0;
+    
+                            img{
+    
+                            }
+    
+                        }
+    
+                    }
+    
+                    .singleTour_priceInfo{
+                        // display: flex;
+                        // flex-wrap: wrap;
+                        // justify-content: space-between;
+    
+                        .singleTour_priceItem{
+                            // flex-basis: 50%;
+                            // padding: 25px 0 40px;
+
+    
+                        }
+    
+                    }
+    
+                    .singleTour_experience{
+                        // display: flex;
+                        // flex-direction: column;
+                        // justify-content: space-between;
+                        // padding: 16px 0;
+    
+                        .singleTour_experienceTitle{
+                            // flex-basis: 30%;
+    
+                        }
+    
+                        .singleTour_experienceDesc{
+                            // flex-basis: 70%;
+                            // padding-left: 30px;
+                            p{
+                                // padding: 8px 0;
+    
+                                span{
+                                    // color: $green;
+                                    // margin-left: -30px;
+                                    // padding-right: 15px;
+                                }
+                            }
+                        }
+                    }
+                    .singleTour_insidersBlock{
+                        // padding: 16px 0;
+    
+    
+                        .singleTour_insidersPeople{
+                            // display: flex;
+                            // flex-direction: column;
+                            // justify-content: space-between;
+                            // flex-wrap: wrap;
+                            // padding: 16px 0;
+    
+                            .singleTour_insidersItem{
+                                // flex-basis: 33%;
+                                // display: flex;
+                                // justify-content: start;
+                                
+    
+                                .singleTour_insidersItemImg{
+                                    // width: 64px;
+                                    // height: 100%;
+                                    // display: block;
+                                    img{
+                                        // display: block;
+                                        // padding-top: 35px;
+                                    }
+                                }
+    
+                                .singleTour_insidersItemText{
+                                    // padding: 20px 0 20px 20px;
+    
+                                    p{
+                                        // color: $videoDesc;
+                                    }
+                                }
+                            }   
+                        }
+                        .singleTour_insidersBtn{
+                            // margin-top: 10px;
+                            // margin-bottom: 40px;
+    
+                            a{
+                                // @include btn{
+                                //     color:$black;
+                                //     background-color: $mainBg;
+                                //     font-weight: bold;
+                                    
+                                // }
+                                // &:hover{
+                                //     color:$white;
+                                //     background-color: $black;
+    
+                                // }
+                            }
+                        }
+                    }
+    
+                    .gettingHere_block{
+                        // padding: 16px 0;
+    
+                        .gettingHere_title{
+    
+    
+                        }
+    
+                        .gettingHere_desc{
+                            // display: flex;
+                            // flex-direction: column;
+                            // justify-content: space-between;
+    
+                            .gettingHere_col{
+                                // flex-basis: 49%;
+                                // margin: 10px 0 30px;
+    
+                                .gettingHere_img{
+    
+                                    img{
+                                        // display: block;
+                                        // width: 100%;
+                                    }
+    
+                                }
+    
+                                .gettingHere_info{
+    
+                                    p{
+                                        // padding: 10px 0;
+                                    }
+    
+    
+                                    
+    
+                                    .gettingHere_sub{
+                                        // display: flex;
+                                    }
+    
+                                    .round{
+                                        // display: block;
+                                        // padding: 10px 17px;
+                                        // margin: 10px;
+                                        // border-radius: 50%;
+                                        // color: $white;
+    
+                                    }
+                                    .red{
+                                        // background-color: $red;
+                                    }
+                                    .green{
+                                        // background-color: $green;
+                                    }
+                                    .blue{
+                                        // background-color: $blue;
+                                    }
+                                    .brown{
+                                        // background-color: $brown;
+                                    }
+                                    .yellow{
+                                        // width: 12px;
+                                        // background-color: $yellow;
+                                        // color: $darkText;
+                                        // font-weight: bold;
+                                    }
+                                }
+                            }
+                        }
+    
+                        .gettingHere_tourEnd{
+    
+                        }
+                    }
+    
+                    .singleTour_mediaBlock{
+    
+                        .singleTour_mediaContent{
+                            // padding: 20px 0;
+                            // display: flex;
+                            // flex-direction: column;
+                            // justify-content: space-between;
+    
+                            .singleTour_mediaItem{
+                                // margin: 10px 0 30px ;
+                                // flex-basis: 49%;
+    
+    
+                                .mediaItem_img{
+                                    // position: relative;
+                                    a{
+                                        // position: absolute;
+                                        // left: 10px;
+                                        // bottom: 10px;
+                                        // display: flex;
+    
+                                        img{
+                                            // display: block;
+                                            // width: 40px;
+                                            // height: 40px;
+                                            
+                                            // margin: 10px auto;
+                                            // border: 3px solid transparent;
+                                            // border-radius: 50%;
+                                            // transition-duration: 500ms;
+                                            // transition-property: border ;
+                                        }
+                                        p{
+                                            // color: $white;
+                                            // font-size: 24px;
+                                            // line-height: 24px;
+                                            // padding: 20px 0 0 13px;
+                                        }
+                
+                                        // &:hover{
+                                        //     img{
+                                        //         border: 3px solid rgba(255,255,255,0.7);
+                                        //     }
+                                        // }
+    
+                                    }
+                                    
+                                    img{
+                                        // display: block;
+                                        // width: 100%;
+                                    }
+                                }
+    
+                            }
+                        }
+                    }
+    
+                    .singleTour_faqPolBlock{
+                        // border-top: 1px solid $videoDesc;
+                        
+                        .singleTour_faq{
+                            // padding: 15px 0;
+                            // display: flex;
+                            // justify-content: space-between;
+    
+                            a{
+                                // color: $black;
+                                // padding: 13px;
+                                // border-radius: 5px;
+                                // transition-duration: 500ms;
+                                // transition-property: background-color, color;
+                                span{
+                                    // font-size: 30px;
+                                }
+                                // &:hover{
+                                //     color: $white;
+                                //     background-color: $black;
+                                // }
+    
+                            }
+                        }
+                    }
+                    .singleTour_otherTours{
+                        // padding: 15px 0 40px;
+                    }
+    
+                    .tours_postPost{
+                        // display: flex;
+                        // flex-direction: column;
+                        // background-color: $white;
+                        // margin: 20px 0;
+    
+                        .tours_postImg{
+                            // flex-basis: 55%;
+                            img{
+                                // display: block;
+                                // width: 100%;
+                            }
+                        }
+        
+                        .tours_postContent{
+                            // flex-basis: 45%;
+                            // padding: 8px 15px;
+                            
+    
+                            p{
+                                // font-size: 16px;
+                                
+                            }
+        
+                            h5{
+                                // margin-bottom: 15px;
+        
+                            }
+        
+                            .ourTours_btn{
+                                // display: block;
+                                // width: 100px;
+                                
+                            //     @include btn{
+                            //         background-color: $white;
+                            //         color: $black;
+                            //         font-weight: bold;
+                                    
+                                   
+                            //     }
+                            //     &:hover{
+                            //         color: $white;
+                            //         background-color: $black;
+        
+                            //     }
+                            }
+                        }
+                    }
+                }
+    
+                .singleTour_bookBlock{
+                    
+                    // display: block;
+                    // flex-basis: 30%;
+                    // width: 90%;
+                    // padding: 10px 10px;
+                    // margin: 0 ;
+                    // position: fixed;
+                    // align-self: flex-start;
+                    // top: 91%;
+                    // width: 351px;
+                    // background-color: $white;
+                    // border-radius: 5px;
+                    // display: flex;
+                    // justify-content: space-around;
+
+                    h4{
+                        // display: none;
+
+                    }
+
+                    h5{
+                        // display: block;
+
+                    }
+    
+                    form{
+                        // padding: 0;
+
+    
+                        .bookTour_date{
+                            // display: none;
+
+                            // width: 100%;
+                            // padding-bottom: 20px;
+                            // input{
+                            //     width: 100%;
+                            // }
+    
+                        }
+                        .bookTour_adults,
+                        .bookTour_children{
+                            // display: none;
+                            // display: flex;
+                            // justify-content: space-between;
+                            // padding: 10px;
+                            // border-top: 1px solid $videoDesc;
+    
+                            p{
+                                // &:first-child{
+                                //     width: 70px;
+                                // }
+                            }
+    
+                            .adultsMinus,
+                            .childrenMinus{
+                                // padding: 4px 8px;
+                                // color: $minus;
+                                // border: 1px solid $minus;
+                                // border-radius: 50%;
+                                // cursor: pointer;
+    
+                            }
+                            .adultsPlus,
+                            .childrenPlus{
+                                // padding: 4px 8px;
+                                // color: $green;
+                                // border: 1px solid $green;
+                                // border-radius: 50%;
+                                // cursor: pointer;
+    
+                            }
+                            #childrenItem,
+                            #adultsItem{
+                                // width: 20px;
+                                // border: none;
+                                // font-size: 16px;
+                            }
+                        }
+    
+                        .bookTour_btn{
+
+                            // margin: 0;
+                            a{
+                                // display: block;
+    
+                                // @include btn{
+                                //     padding: 12px 50px;
+                                // }
+                            }
+                        } 
+                    }     
+                }
+            }
+        }
+    }
+
+}
+@media(max-width:330px){
+    .singleTour_sec{
+        .singleTour_wrap{
+            .singleTour_mainContent{
+                // display: flex;
+                // justify-content: space-between;
+                // position: relative;
+    
+                .singleTour_infoBlock{
+                    // flex-basis: 99%;
+                    // width: 100%;
+                    
+    
+                    h2{
+                        // display: inline-block;
+                        // max-width: 60%;
+                        
+                    }
+    
+                    .singleTour_infoTitle{
+                        // text-align: center;
+    
+    
+                        .singleTour_infoImg{
+                            // padding: 20px 0;
+    
+                            img{
+    
+                            }
+    
+                        }
+    
+                    }
+    
+                    .singleTour_priceInfo{
+                        // display: flex;
+                        // flex-wrap: wrap;
+                        // justify-content: space-between;
+    
+                        .singleTour_priceItem{
+                            // flex-basis: 50%;
+                            // padding: 25px 0 40px;
+
+    
+                        }
+    
+                    }
+    
+                    .singleTour_experience{
+                        // display: flex;
+                        // flex-direction: column;
+                        // justify-content: space-between;
+                        // padding: 16px 0;
+    
+                        .singleTour_experienceTitle{
+                            // flex-basis: 30%;
+    
+                        }
+    
+                        .singleTour_experienceDesc{
+                            // flex-basis: 70%;
+                            // padding-left: 30px;
+                            p{
+                                // padding: 8px 0;
+    
+                                span{
+                                    // color: $green;
+                                    // margin-left: -30px;
+                                    // padding-right: 15px;
+                                }
+                            }
+                        }
+                    }
+                    .singleTour_insidersBlock{
+                        // padding: 16px 0;
+    
+    
+                        .singleTour_insidersPeople{
+                            // display: flex;
+                            // flex-direction: column;
+                            // justify-content: space-between;
+                            // flex-wrap: wrap;
+                            // padding: 16px 0;
+    
+                            .singleTour_insidersItem{
+                                // flex-basis: 33%;
+                                // display: flex;
+                                // justify-content: start;
+                                
+    
+                                .singleTour_insidersItemImg{
+                                    // width: 64px;
+                                    // height: 100%;
+                                    // display: block;
+                                    img{
+                                        // display: block;
+                                        // padding-top: 35px;
+                                    }
+                                }
+    
+                                .singleTour_insidersItemText{
+                                    // padding: 20px 0 20px 20px;
+    
+                                    p{
+                                        // color: $videoDesc;
+                                    }
+                                }
+                            }   
+                        }
+                        .singleTour_insidersBtn{
+                            // margin-top: 10px;
+                            // margin-bottom: 40px;
+    
+                            a{
+                                // @include btn{
+                                //     color:$black;
+                                //     background-color: $mainBg;
+                                //     font-weight: bold;
+                                    
+                                // }
+                                // &:hover{
+                                //     color:$white;
+                                //     background-color: $black;
+    
+                                // }
+                            }
+                        }
+                    }
+    
+                    .gettingHere_block{
+                        // padding: 16px 0;
+    
+                        .gettingHere_title{
+    
+    
+                        }
+    
+                        .gettingHere_desc{
+                            // display: flex;
+                            // flex-direction: column;
+                            // justify-content: space-between;
+    
+                            .gettingHere_col{
+                                // flex-basis: 49%;
+                                // margin: 10px 0 30px;
+    
+                                .gettingHere_img{
+    
+                                    img{
+                                        // display: block;
+                                        // width: 100%;
+                                    }
+    
+                                }
+    
+                                .gettingHere_info{
+    
+                                    p{
+                                        // padding: 10px 0;
+                                    }
+    
+    
+                                    
+    
+                                    .gettingHere_sub{
+                                        // display: flex;
+                                    }
+    
+                                    .round{
+                                        // display: block;
+                                        // padding: 10px 17px;
+                                        // margin: 10px;
+                                        // border-radius: 50%;
+                                        // color: $white;
+    
+                                    }
+                                    .red{
+                                        // background-color: $red;
+                                    }
+                                    .green{
+                                        // background-color: $green;
+                                    }
+                                    .blue{
+                                        // background-color: $blue;
+                                    }
+                                    .brown{
+                                        // background-color: $brown;
+                                    }
+                                    .yellow{
+                                        // width: 12px;
+                                        // background-color: $yellow;
+                                        // color: $darkText;
+                                        // font-weight: bold;
+                                    }
+                                }
+                            }
+                        }
+    
+                        .gettingHere_tourEnd{
+    
+                        }
+                    }
+    
+                    .singleTour_mediaBlock{
+    
+                        .singleTour_mediaContent{
+                            // padding: 20px 0;
+                            // display: flex;
+                            // flex-direction: column;
+                            // justify-content: space-between;
+    
+                            .singleTour_mediaItem{
+                                // margin: 10px 0 30px ;
+                                // flex-basis: 49%;
+    
+    
+                                .mediaItem_img{
+                                    // position: relative;
+                                    a{
+                                        // position: absolute;
+                                        // left: 10px;
+                                        // bottom: 10px;
+                                        // display: flex;
+    
+                                        img{
+                                            // display: block;
+                                            // width: 40px;
+                                            // height: 40px;
+                                            
+                                            // margin: 10px auto;
+                                            // border: 3px solid transparent;
+                                            // border-radius: 50%;
+                                            // transition-duration: 500ms;
+                                            // transition-property: border ;
+                                        }
+                                        p{
+                                            // color: $white;
+                                            // font-size: 24px;
+                                            // line-height: 24px;
+                                            // padding: 20px 0 0 13px;
+                                        }
+                
+                                        // &:hover{
+                                        //     img{
+                                        //         border: 3px solid rgba(255,255,255,0.7);
+                                        //     }
+                                        // }
+    
+                                    }
+                                    
+                                    img{
+                                        // display: block;
+                                        // width: 100%;
+                                    }
+                                }
+    
+                            }
+                        }
+                    }
+    
+                    .singleTour_faqPolBlock{
+                        // border-top: 1px solid $videoDesc;
+                        
+                        .singleTour_faq{
+                            // padding: 15px 0;
+                            // display: flex;
+                            // justify-content: space-between;
+    
+                            a{
+                                // color: $black;
+                                // padding: 13px;
+                                // border-radius: 5px;
+                                // transition-duration: 500ms;
+                                // transition-property: background-color, color;
+                                span{
+                                    // font-size: 30px;
+                                }
+                                // &:hover{
+                                //     color: $white;
+                                //     background-color: $black;
+                                // }
+    
+                            }
+                        }
+                    }
+                    .singleTour_otherTours{
+                        // padding: 15px 0 40px;
+                    }
+    
+                    .tours_postPost{
+                        // display: flex;
+                        // flex-direction: column;
+                        // background-color: $white;
+                        // margin: 20px 0;
+    
+                        .tours_postImg{
+                            // flex-basis: 55%;
+                            img{
+                                // display: block;
+                                // width: 100%;
+                            }
+                        }
+        
+                        .tours_postContent{
+                            // flex-basis: 45%;
+                            // padding: 8px 15px;
+                            
+    
+                            p{
+                                // font-size: 16px;
+                                
+                            }
+        
+                            h5{
+                                // margin-bottom: 15px;
+        
+                            }
+        
+                            .ourTours_btn{
+                                // display: block;
+                                // width: 100px;
+                                
+                            //     @include btn{
+                            //         background-color: $white;
+                            //         color: $black;
+                            //         font-weight: bold;
+                                    
+                                   
+                            //     }
+                            //     &:hover{
+                            //         color: $white;
+                            //         background-color: $black;
+        
+                            //     }
+                            }
+                        }
+                    }
+                }
+    
+                .singleTour_bookBlock{
+                    
+                    // display: block;
+                    // flex-basis: 30%;
+                    width: 80%;
+                    // padding: 10px 10px;
+                    // margin: 0 ;
+                    // position: fixed;
+                    // align-self: flex-start;
+                    top: 90%;
+                    // width: 351px;
+                    // background-color: $white;
+                    // border-radius: 5px;
+                    // display: flex;
+                    // justify-content: space-around;
+
+                    h4{
+                        // display: none;
+
+                    }
+
+                    h5{
+                        // display: block;
+
+                    }
+    
+                    form{
+                        // padding: 0;
+
+    
+                        .bookTour_date{
+                            // display: none;
+
+                            // width: 100%;
+                            // padding-bottom: 20px;
+                            // input{
+                            //     width: 100%;
+                            // }
+    
+                        }
+                        .bookTour_adults,
+                        .bookTour_children{
+                            // display: none;
+                            // display: flex;
+                            // justify-content: space-between;
+                            // padding: 10px;
+                            // border-top: 1px solid $videoDesc;
+    
+                            p{
+                                // &:first-child{
+                                //     width: 70px;
+                                // }
+                            }
+    
+                            .adultsMinus,
+                            .childrenMinus{
+                                // padding: 4px 8px;
+                                // color: $minus;
+                                // border: 1px solid $minus;
+                                // border-radius: 50%;
+                                // cursor: pointer;
+    
+                            }
+                            .adultsPlus,
+                            .childrenPlus{
+                                // padding: 4px 8px;
+                                // color: $green;
+                                // border: 1px solid $green;
+                                // border-radius: 50%;
+                                // cursor: pointer;
+    
+                            }
+                            #childrenItem,
+                            #adultsItem{
+                                // width: 20px;
+                                // border: none;
+                                // font-size: 16px;
+                            }
+                        }
+    
+                        .bookTour_btn{
+
+                            // margin: 0;
+                            a{
+                                // display: block;
+    
+                                // @include btn{
+                                //     padding: 12px 50px;
+                                // }
+                            }
+                        } 
+                    }     
+                }
+            }
+        }
+    }
+
+}

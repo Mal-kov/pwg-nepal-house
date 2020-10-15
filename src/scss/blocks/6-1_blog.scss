@@ -1,0 +1,104 @@
+.blog_sec{
+
+    .blog_wrap{
+        border-top: 1px solid $videoDesc;
+        .blog_img{
+            display: block;
+            img{
+                display: block;
+                width: 100%;
+            }
+        }
+        span{
+            font-size: 12px;
+            line-height: 16px;
+            color: $red;
+        }
+        .blog_mainPost{
+            display: flex;
+            justify-content: space-between;
+            padding: 35px 0 50px;
+            .blog_img{
+                flex-basis: 60%;
+            }
+            .blog_mainDesc{
+                padding-left: 50px;
+                flex-basis: 40%;
+                .blog_btn{
+                    display: block;
+                    width: 90px;
+                    margin-top: 20px;
+                    @include btn{
+                        color: $black;
+                        font-weight: bold;
+                        background-color: $mainBg;
+                    }
+                    &:hover{
+                        color: $white;
+                        background-color: $black;
+                    }
+                }
+            }
+        }
+        .blog_lastPosts{
+            display: flex;
+            justify-content: space-between;
+            padding: 20px 0 30px;
+            .blog_lastItem{
+                flex-basis: 32%;
+                .blog_img{
+                    overflow: hidden;
+                    img{
+                        transition-duration: 1000ms;
+                        overflow: hidden;
+                    }
+                }
+                .blog_lastDesc{
+                    padding: 15px 0;
+                }
+                &:hover{
+                    .blog_img{
+                        img{
+                            transform: scale(1.1);
+                        }
+                    }
+                }
+            }
+        }
+        .blog_posts{
+            display: flex;
+            justify-content: space-between;
+            padding: 20px 0 30px;
+            .blog_postsItem{
+                flex-basis: 32%;
+            }
+        }
+    }
+}
+@media(max-width:768px){
+    .blog_sec{
+        .blog_wrap{
+            .blog_mainPost{
+                flex-direction: column-reverse;
+                .blog_img{
+                    margin-top: 20px;
+                }
+            }
+            .blog_lastPosts{
+                flex-direction: column;
+    
+                .blog_lastItem{
+                    .blog_lastDesc{
+                        margin-bottom: 30px;
+                    }
+                }
+            }
+            .blog_posts{
+                flex-direction: column;
+                .blog_postsItem{
+                    margin-bottom: 30px;
+                }
+            }
+        }
+    }
+}

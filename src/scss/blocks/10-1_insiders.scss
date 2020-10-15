@@ -1,0 +1,241 @@
+.insiders_sec{
+    .insiders_wrap{
+        padding-top: 50px;
+        padding-bottom: 50px;
+        h2{
+            max-width: 360px;
+        }
+        border-top: 1px solid $videoDesc;
+        p{
+            padding: 10px 0;
+        }
+        .insiders_block{
+            display: flex;
+            justify-content: space-between;
+            padding-top: 20px;
+            .insiders_desc{
+                flex-basis: 30%;
+                p{
+                    padding-top: 0;
+                    padding-bottom: 20px;
+                }
+            }
+            .insiders_items{
+                flex-basis: 65%;
+                .insiders_item{
+                    display: flex;
+                    justify-content: space-between;
+                    padding: 30px 0 50px;
+                    .insiders_itemPhoto{
+                        flex-basis: 30%;
+                        img{
+                            display: block;
+                        }
+                    }
+                    .insiders_itemDesc{
+                        flex-basis: 70%;
+                        // padding-left: 25px;
+                        .moreless-button{
+                            display: none;
+                        }
+                    }
+                }
+            }
+            .tours_posts{
+                display: none;
+    
+                #owl_carousel_tourSmallScreen{
+    
+                    display: flex;
+                        flex-direction: row;
+                        max-width: 700px;
+                        margin: 0 auto;
+                        overflow: hidden;
+                        
+                        .owl-item{
+                            min-width: 0;
+                        }
+        
+                        .owl-stage{
+                            display: flex;
+                            flex-direction: row;
+                            flex-wrap: wrap;
+                    
+                        }
+                        .owl-nav{
+                            // display: none;
+                        }
+                        .owl-dots{
+                            display: block;
+                            display: flex;
+                            justify-content: center;
+                            .owl-dot{   
+                                border: none;
+                                width: 10px;
+                                height: 10px;
+                                border-radius: 50%;
+                                background-color: $videoDesc;
+                                margin: 3px 5px;
+                                padding: 5px;
+                                opacity: 0.5;
+                            }
+                            .active{
+                                opacity: 1;
+                            }
+                        }
+    
+                    .tours_postPost{
+                        display: flex;
+                        background-color: $white;
+                        margin: 20px 0;
+        
+                        .tours_postImg{
+                            flex-basis: 55%;
+                            img{
+                                display: block;
+                                width: 100%;
+                            }
+                        }
+                        .tours_postContent{
+                            flex-basis: 45%;
+                            padding: 8px 15px;
+        
+                            .itemRatingBlock{
+                                display: flex;
+        
+        
+                                .itemRating{
+                                    font-size: 12px;
+                                    margin-bottom: 0;
+                                    .itemStarsRating{
+                                        padding-right: 10px;
+                                    }
+                                    span{
+                                        color: $green;
+                                    }
+                                }
+                                h5{
+                                    margin-bottom: 0;
+                                    margin-left: 17px;
+                                    padding-top: 10px;
+                                }
+                            }
+                            .ourTours_btnBlock{
+                                margin-top: 10px;
+                                .ourTours_btn{
+                                    @include btn{
+                                        background-color: $white;
+                                        color: $black;
+                                        font-weight: bold; 
+        
+                                    }
+                                    &:hover{
+                                        color: $white;
+                                        background-color: $black;
+                                    }
+                                }
+                            }
+                        }
+                    }
+    
+                }
+                
+            } 
+        }
+    }
+}
+@media(max-width:1025px){
+    .insiders_sec{
+        .insiders_wrap{
+            .insiders_block{
+                .tours_posts{
+                    .tours_postPost{
+                        .tours_postContent{
+                            .itemRatingBlock{
+                                .itemRating{
+                                    padding: 0;
+                                }
+                                h5{
+                                    padding: 0;
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+@media(max-width:980px){
+    .insiders_sec{
+        .insiders_wrap{
+            .insiders_block{
+                flex-direction: column;
+                .tours_posts{
+                    .tours_postPost{
+                        .tours_postContent{
+                            .itemRatingBlock{
+                                .itemRating{
+                                    padding: 0;
+                                }
+                                h5{
+                                    padding: 0;
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+@media(max-width:768px){
+    .insiders_sec{
+        .insiders_wrap{
+            .insiders_block{
+                flex-direction: column;
+                .insiders_items{
+                    .insiders_item{
+                        .insiders_itemPhoto{
+                            img{
+                                width: 100%;
+                            }
+                        }
+                        .insiders_itemDesc{
+                            padding-left: 10px;
+                            .moretext{
+                                display: none;
+                            }
+                            .moreless-button{
+                                display: block;
+                                font-weight: bold;
+                            }
+                        }
+                    }
+                }
+                .tours_posts{
+                    display: block;
+                    .tours_postPost{
+                        flex-direction: column;
+                        .tours_postContent{
+                            .itemRatingBlock{
+                                .itemRating{
+                                    padding: 0;
+                                }
+                                h5{
+                                    padding: 0;
+                                }
+                            }
+                            .ourTours_btnBlock{
+                                .ourTours_btn{
+                                    display: block;
+                                    width: 90px;
+                                }
+                            }
+                        }
+                    }
+                } 
+            }
+        }
+    }
+}

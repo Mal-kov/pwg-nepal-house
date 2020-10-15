@@ -1,0 +1,124 @@
+.privateTours_sec{
+    min-height: calc(100vh - 218px);
+    width: 100%;
+
+    .privateTours_wrap{
+        border-top: 1px solid $videoDesc;
+        padding-top: 40px;
+
+        .privateTours_main{
+            display: flex;
+            justify-content: space-between;
+
+            .privateTours_info{
+                color: $darkText;
+                padding-right: 50px ;
+
+                .privateTours_title{
+                    font-family: 'Libre Caslon Text', serif;
+                    font-size: 48px;
+                    line-height: 48px;
+                    font-weight: bold;
+                    letter-spacing: -0.01em;
+                    padding: 10px 0;
+
+                }
+                .privateTours_desc{
+                    font-size: 20px;
+                    line-height: 32px;
+                    margin-bottom: 20px;
+
+                }
+                .btn_bookNow{
+                    @include btn{}
+                }
+            }
+            .privateTours_img{
+                width: 488px;
+                height: 344px;
+
+                img{
+                    display: block;
+                }
+            }
+        }
+        .privateTours_logo{
+            margin-top: 70px;
+            ul{
+                display: flex;
+                justify-content: start;
+                li{
+                    width: 98px;
+                    height: 79px;
+                    border: 1px solid $videoDesc;
+                    position: relative;
+                    img{
+                        position: absolute;
+                        left: 50%;
+                        top: 50%;
+                        transform: translate(-50%, -50%);
+                        display: block;
+                        width: 90%;
+                    };
+                }
+            }
+        }
+    }
+}
+@media(max-width:980px){
+    .privateTours_sec{
+        .privateTours_wrap{
+            .privateTours_main{
+                .privateTours_info{
+                    flex-basis: 60%;
+                }
+                .privateTours_img{
+                    flex-basis: 40%;
+                    width: auto;
+                    height: auto;
+    
+                    img{
+                        display: block;
+                        width: 100%;
+                    }
+                }
+            }
+        }
+    }
+}
+@media(max-width:580px){
+    .privateTours_sec{
+        .privateTours_wrap{
+            .privateTours_main{
+                    flex-flow: column-reverse;
+                .privateTours_info{
+                    .privateTours_title{
+                        font-size: 36px;
+                    }
+                    .privateTours_desc{
+                        font-size: 16px;
+                    }
+                }
+            }
+            .privateTours_logo{
+                margin-bottom: 40px;
+                ul{
+                    justify-content: center;
+                    flex-wrap: wrap;
+                }
+            }
+        }
+    }
+}
+@media(max-width:480px){
+    .privateTours_sec{
+        .privateTours_wrap{
+            padding: 0;
+            .privateTours_main{
+                .privateTours_info{
+                    padding: 0 15px ;
+                } 
+            }
+        }
+    }
+}

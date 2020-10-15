@@ -1,0 +1,619 @@
+.client_sec{
+    min-height: calc(100vh - 218px);
+    width: 100%;
+
+    .client_wrap{
+        border-top: 1px solid $videoDesc;
+        padding: 40px 15px 125px;
+
+        h2{
+            padding-bottom: 50px;
+        }
+
+        .client_devider_1,
+        .client_devider_2{
+            display: none;
+            border-top: 4px solid $devider;
+            position: relative;
+
+            &::after{
+                content: "";
+                height: 1px;
+                width: 100%;
+                
+                background: $devider;
+                display: block;
+                position: absolute;
+                top: 4px;
+                left: 0;
+            }
+        }
+
+        .client_devider_2{
+            display: block;
+
+        }
+        .client_block{
+
+            .schools_clients{
+                padding: 10px 0 25px;
+                ul{
+                    display: flex;
+                    flex-wrap: wrap;
+                    justify-content: center;
+                    padding-top: 20px;
+                    li{
+                        width: 137px;
+                        height: 100px;
+                        border: 1px solid $videoDesc;
+                        position: relative;
+                        margin-right: -1px;
+                        margin-top: -1px;
+
+    
+                        img{
+                            position: absolute;
+                            left: 50%;
+                            top: 50%;
+                            transform: translate(-50%, -50%);
+                            display: block;
+                            max-width: 100%;
+                        };
+                    }
+                }
+            }
+        }  
+        .tours_posts{
+            display: none;
+
+            #owl_carousel_tourSmallScreen{
+
+                display: flex;
+                    flex-direction: row;
+                    max-width: 700px;
+                    margin: 0 auto;
+                    overflow: hidden;
+                    
+                    .owl-item{
+                        min-width: 0;
+                    }
+    
+                    .owl-stage{
+                        display: flex;
+                        flex-direction: row;
+                        flex-wrap: wrap;
+                
+                    }
+                    .owl-nav{
+                        // display: none;
+                    }
+                    .owl-dots{
+                        display: block;
+                        display: flex;
+                        justify-content: center;
+                        .owl-dot{   
+                            border: none;
+                            width: 10px;
+                            height: 10px;
+                            border-radius: 50%;
+                            background-color: $videoDesc;
+                            margin: 3px 5px;
+                            padding: 5px;
+                            opacity: 0.5;
+                        }
+                        .active{
+                            opacity: 1;
+                        }
+                    }
+
+                .tours_postPost{
+                    display: flex;
+                    background-color: $white;
+                    margin: 20px 0;
+    
+                    .tours_postImg{
+                        flex-basis: 55%;
+                        img{
+                            display: block;
+                            width: 100%;
+                        }
+                    }
+                    .tours_postContent{
+                        flex-basis: 45%;
+                        padding: 8px 15px;
+    
+                        .itemRatingBlock{
+                            display: flex;
+    
+    
+                            .itemRating{
+                                font-size: 12px;
+                                margin-bottom: 0;
+                                .itemStarsRating{
+                                    padding-right: 10px;
+                                }
+                                span{
+                                    color: $green;
+                                }
+                            }
+                            h5{
+                                margin-bottom: 0;
+                                margin-left: 17px;
+                                padding-top: 10px;
+                            }
+                        }
+                        .ourTours_btnBlock{
+                            margin-top: 10px;
+                            .ourTours_btn{
+                                @include btn{
+                                    background-color: $white;
+                                    color: $black;
+                                    font-weight: bold; 
+    
+                                }
+                                &:hover{
+                                    color: $white;
+                                    background-color: $black;
+                                }
+                            }
+                        }
+                    }
+                }
+
+            }
+            
+        } 
+    }
+}
+@media(max-width:768px){
+    .client_sec{
+        // min-height: calc(100vh - 218px);
+        // width: 100%;
+    
+        .client_wrap{
+            // border-top: 1px solid $videoDesc;
+            // padding: 40px 0 125px;
+    
+            h2{
+                // padding-bottom: 50px;
+            }
+    
+            .client_devider_1,
+            .client_devider_2{
+                display: block;
+                // border-top: 4px solid $devider;
+                // position: relative;
+    
+                // &::after{
+                //     content: "";
+                //     height: 1px;
+                //     width: 100%;
+                    
+                //     background: $devider;
+                //     display: block;
+                //     position: absolute;
+                //     top: 4px;
+                //     left: 0;
+                // }
+            }
+    
+            .client_devider_2{
+                display: none;
+                
+    
+            }
+            .client_block{
+    
+                .schools_clients{
+                    // padding: 10px 0 25px;
+                    ul{
+                        // display: flex;
+                        // flex-wrap: wrap;
+                        // justify-content: center;
+                        // padding-top: 20px;
+                        li{
+                            // width: 141px;
+                            // height: 100px;
+                            // border: 1px solid $videoDesc;
+                            // position: relative;
+                            // margin-right: -1px;
+                            // margin-top: -1px;
+    
+        
+                            img{
+                                // position: absolute;
+                                // left: 50%;
+                                // top: 50%;
+                                // transform: translate(-50%, -50%);
+                                // display: block;
+                                // max-width: 100%;
+                            };
+                        }
+                    }
+                }
+            } 
+            .tours_posts{
+                display: block;
+                .tours_postPost{
+                    flex-direction: column;
+                    .tours_postContent{
+                        .itemRatingBlock{
+                            .itemRating{
+                                padding: 0;
+                            }
+                            h5{
+                                padding: 0;
+                            }
+                        }
+                        .ourTours_btnBlock{
+                            .ourTours_btn{
+                                display: block;
+                                width: 90px;
+                            }
+                        }
+                    }
+                }
+            } 
+        }
+    }
+
+}
+@media(max-width:600px){
+    .client_sec{
+        // min-height: calc(100vh - 218px);
+        // width: 100%;
+    
+        .client_wrap{
+            border-top: none;
+            padding: 30px 16px 55px;
+    
+            h2{
+                padding-bottom: 18px;
+            }
+    
+            .client_devider_1,
+            .client_devider_2{
+                // display: block;
+                // border-top: 4px solid $devider;
+                // position: relative;
+    
+                // &::after{
+                //     content: "";
+                //     height: 1px;
+                //     width: 100%;
+                    
+                //     background: $devider;
+                //     display: block;
+                //     position: absolute;
+                //     top: 4px;
+                //     left: 0;
+                // }
+            }
+    
+            .client_devider_2{
+                // display: none;
+                
+    
+            }
+            .client_block{
+    
+                .schools_clients{
+                    // padding: 10px 0 25px;
+                    ul{
+                        // display: flex;
+                        // flex-wrap: wrap;
+                        // justify-content: center;
+                        // padding-top: 20px;
+                        li{
+                            // width: 141px;
+                            // height: 100px;
+                            // border: 1px solid $videoDesc;
+                            // position: relative;
+                            // margin-right: -1px;
+                            // margin-top: -1px;
+    
+        
+                            img{
+                                // position: absolute;
+                                // left: 50%;
+                                // top: 50%;
+                                // transform: translate(-50%, -50%);
+                                // display: block;
+                                // max-width: 100%;
+                            };
+                        }
+                    }
+                }
+            }   
+        }
+    }
+
+}
+@media(max-width:458px){
+    .client_sec{
+        // min-height: calc(100vh - 218px);
+        // width: 100%;
+    
+        .client_wrap{
+            // border-top: none;
+            // padding: 30px 16px 55px;
+    
+            h2{
+                // padding-bottom: 50px;
+            }
+    
+            .client_devider_1,
+            .client_devider_2{
+                // display: block;
+                // border-top: 4px solid $devider;
+                // position: relative;
+    
+                // &::after{
+                //     content: "";
+                //     height: 1px;
+                //     width: 100%;
+                    
+                //     background: $devider;
+                //     display: block;
+                //     position: absolute;
+                //     top: 4px;
+                //     left: 0;
+                // }
+            }
+    
+            .client_devider_2{
+                // display: none;
+                
+    
+            }
+            .client_block{
+    
+                .schools_clients{
+                    // padding: 10px 0 25px;
+                    ul{
+                        // display: flex;
+                        // flex-wrap: wrap;
+                        // justify-content: center;
+                        // padding-top: 20px;
+                        li{
+                            width: 116px;
+                            height: 72px;
+                            // border: 1px solid $videoDesc;
+                            // position: relative;
+                            // margin-right: -1px;
+                            // margin-top: -1px;
+    
+        
+                            img{
+                                // position: absolute;
+                                // left: 50%;
+                                // top: 50%;
+                                // transform: translate(-50%, -50%);
+                                // display: block;
+                                max-height: 80%;
+                                max-width: 80%;
+                            };
+                        }
+                    }
+                }
+            }   
+        }
+    }
+
+}
+@media(max-width:383px){
+    .client_sec{
+        // min-height: calc(100vh - 218px);
+        // width: 100%;
+    
+        .client_wrap{
+            // border-top: none;
+            // padding: 30px 16px 55px;
+    
+            h2{
+                // padding-bottom: 50px;
+            }
+    
+            .client_devider_1,
+            .client_devider_2{
+                // display: block;
+                // border-top: 4px solid $devider;
+                // position: relative;
+    
+                // &::after{
+                //     content: "";
+                //     height: 1px;
+                //     width: 100%;
+                    
+                //     background: $devider;
+                //     display: block;
+                //     position: absolute;
+                //     top: 4px;
+                //     left: 0;
+                // }
+            }
+    
+            .client_devider_2{
+                // display: none;
+                
+    
+            }
+            .client_block{
+    
+                .schools_clients{
+                    // padding: 10px 0 25px;
+                    ul{
+                        // display: flex;
+                        // flex-wrap: wrap;
+                        // justify-content: center;
+                        // padding-top: 20px;
+                        li{
+                            width: 113px;
+                            // height: 72px;
+                            // border: 1px solid $videoDesc;
+                            // position: relative;
+                            // margin-right: -1px;
+                            // margin-top: -1px;
+    
+        
+                            img{
+                                // position: absolute;
+                                // left: 50%;
+                                // top: 50%;
+                                // transform: translate(-50%, -50%);
+                                // display: block;
+                                // max-height: 80%;
+                                // max-width: 80%;
+                            };
+                        }
+                    }
+                }
+            }   
+        }
+    }
+
+}
+@media(max-width:360px){
+    .client_sec{
+        // min-height: calc(100vh - 218px);
+        // width: 100%;
+    
+        .client_wrap{
+            // border-top: none;
+            // padding: 30px 16px 55px;
+    
+            h2{
+                // padding-bottom: 50px;
+            }
+    
+            .client_devider_1,
+            .client_devider_2{
+                // display: block;
+                // border-top: 4px solid $devider;
+                // position: relative;
+    
+                // &::after{
+                //     content: "";
+                //     height: 1px;
+                //     width: 100%;
+                    
+                //     background: $devider;
+                //     display: block;
+                //     position: absolute;
+                //     top: 4px;
+                //     left: 0;
+                // }
+            }
+    
+            .client_devider_2{
+                // display: none;
+                
+    
+            }
+            .client_block{
+    
+                .schools_clients{
+                    // padding: 10px 0 25px;
+                    ul{
+                        // display: flex;
+                        // flex-wrap: wrap;
+                        // justify-content: center;
+                        // padding-top: 20px;
+                        li{
+                            width: 108px;
+                            // height: 72px;
+                            // border: 1px solid $videoDesc;
+                            // position: relative;
+                            // margin-right: -1px;
+                            // margin-top: -1px;
+    
+        
+                            img{
+                                // position: absolute;
+                                // left: 50%;
+                                // top: 50%;
+                                // transform: translate(-50%, -50%);
+                                // display: block;
+                                // max-height: 80%;
+                                // max-width: 80%;
+                            };
+                        }
+                    }
+                }
+            }   
+        }
+    }
+
+}
+@media(max-width:350px){
+    .client_sec{
+        // min-height: calc(100vh - 218px);
+        // width: 100%;
+    
+        .client_wrap{
+            // border-top: none;
+            // padding: 30px 16px 55px;
+    
+            h2{
+                // padding-bottom: 50px;
+            }
+    
+            .client_devider_1,
+            .client_devider_2{
+                // display: block;
+                // border-top: 4px solid $devider;
+                // position: relative;
+    
+                // &::after{
+                //     content: "";
+                //     height: 1px;
+                //     width: 100%;
+                    
+                //     background: $devider;
+                //     display: block;
+                //     position: absolute;
+                //     top: 4px;
+                //     left: 0;
+                // }
+            }
+    
+            .client_devider_2{
+                // display: none;
+                
+    
+            }
+            .client_block{
+    
+                .schools_clients{
+                    // padding: 10px 0 25px;
+                    ul{
+                        // display: flex;
+                        // flex-wrap: wrap;
+                        // justify-content: center;
+                        // padding-top: 20px;
+                        li{
+                            width: 95px;
+                            // height: 72px;
+                            // border: 1px solid $videoDesc;
+                            // position: relative;
+                            // margin-right: -1px;
+                            // margin-top: -1px;
+    
+        
+                            img{
+                                // position: absolute;
+                                // left: 50%;
+                                // top: 50%;
+                                // transform: translate(-50%, -50%);
+                                // display: block;
+                                // max-height: 80%;
+                                // max-width: 80%;
+                            };
+                        }
+                    }
+                }
+            }   
+        }
+    }
+
+}

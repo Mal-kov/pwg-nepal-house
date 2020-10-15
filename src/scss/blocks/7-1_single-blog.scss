@@ -1,0 +1,143 @@
+.blogSingle_sec{
+    .blogSingle_wrap{
+        border-top: 1px solid $videoDesc;
+        .breadcrumb{
+            padding: 15px 0;
+            font-size: 16px;
+            a{
+                color: $black;
+                padding: 5px 8px;
+                border-radius: 5px;
+                background-color: $mainBg;
+                span{
+                    margin-right: 10px;
+                }
+                &:hover{
+                    color: $white;
+                    background-color: $black;
+                }
+            }
+        }
+        .blogSingle_post{
+            .blogSingle_postHeader{
+                .blogSingle_postTitle{
+                    h2{
+                        max-width: 500px; 
+                    }
+                    p{
+                        padding: 20px 0;
+                    }
+                    span{
+                        font-size: 12px;
+                        line-height: 16px;
+                        color: $red;
+                    }
+                }
+                .blogSingle_postImg{
+                    display: block;
+                    margin-bottom: 20px;
+                    img{
+                        display: block;
+                        width: 100%;
+                    }
+                }
+            }
+            .blogSingle_postBlock{
+                display: flex;
+                justify-content: space-between;
+
+                .blogSingle_postSocial{
+                    width: 20%;
+                    border-top: 1px solid $videoDesc;
+                    position: sticky;
+                    align-self: flex-start;
+                    top: 2em;
+                    a{
+                        display: flex;
+                        text-decoration: none;
+                        color: $darkText;
+                        padding: 10px;
+                        border-radius: 5px;
+                        span{
+                            font-size: 26px;
+                            padding-right: 10px;
+                        }
+                        &:hover{
+                            color: $white;
+                            background-color: $black;
+                        }
+                    }
+                }
+                .blogSingle_postText{
+                    width: 80%;
+                    padding: 10px 0 20px 20px;
+                    img{
+                        display: block;
+                        width: 100%;
+                    }
+                    .blogSingle_tours{
+                        margin: 20px 0;
+                        border: 1px solid $videoDesc;
+                        padding: 20px;
+                        display: flex;
+                        .blogSingle_toursDesc{
+                            .blogSingle_toursBtn{
+                                display: block;
+                                width: 90px;
+                                @include btn{
+                                    font-weight: bold;
+                                }
+                            }
+                        }
+                        .blogSingle_toursImg{
+                            img{
+                                display: block;
+                                width: 100%;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+@media(max-width:768px){
+    .blogSingle_sec{
+        .blogSingle_wrap{
+            .blogSingle_post{
+                .blogSingle_postHeader{
+                    display: flex;
+                    flex-direction: column-reverse;
+                }
+                .blogSingle_postBlock{
+                    flex-direction: column;
+                    .blogSingle_postSocial{
+                        width: 100%;
+                        .blogSingle_postSocialItems{
+                            display: flex;
+                        }
+                    }
+                    .blogSingle_postText{
+                        width: 95%;
+                        padding: 20px;
+                    }
+                }
+            }
+        }
+    }
+}
+@media(max-width:560px){
+    .blogSingle_sec{
+        .blogSingle_wrap{
+            .blogSingle_post{
+                .blogSingle_postBlock{   
+                    .blogSingle_postText{
+                        .blogSingle_tours{
+                            flex-direction: column-reverse;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
